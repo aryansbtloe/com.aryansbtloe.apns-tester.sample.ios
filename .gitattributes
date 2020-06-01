@@ -1,0 +1,8 @@
+*.framework filter=lfs diff=lfs merge=lfs -text
+*.swiftmodule filter=lfs diff=lfs merge=lfs -text
+*/Pods/AudioKit/iOS/AudioKit.framework/AudioKit filter=lfs diff=lfs merge=lfs -text
+*/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/GoogleMobileAds filter=lfs diff=lfs merge=lfs -text
+*/Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.framework/GoogleAppMeasurement filter=lfs diff=lfs merge=lfs -text
+*GoogleAppMeasurement filter=lfs diff=lfs merge=lfs -text
+*GoogleMobileAds filter=lfs diff=lfs merge=lfs -text
+*AudioKit filter=lfs diff=lfs merge=lfs -text
