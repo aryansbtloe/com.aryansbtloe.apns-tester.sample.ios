@@ -16,34 +16,236 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icp-Mk-T3d">
-                                <rect key="frame" x="10" y="172" width="394" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7v-Z2-BZw">
-                                <rect key="frame" x="67" y="192" width="280" height="30"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikj-O2-HrQ">
+                                <rect key="frame" x="10" y="251" width="394" height="394.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Token" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Icp-Mk-T3d">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="prk-mm-MNw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-N3-CdE">
+                                        <rect key="frame" x="153" y="69" width="88" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="0Ju-Fh-ydt"/>
+                                            <constraint firstAttribute="width" constant="88" id="PeY-F4-8xe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="COPY"/>
+                                        <connections>
+                                            <action selector="fetchAndCopyDeviceToken" destination="hhQ-UZ-iE4" eventType="touchUpInside" id="6hm-7i-OkV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVZ-ML-dJY">
+                                        <rect key="frame" x="0.0" y="163" width="394" height="37"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Bundle Id 
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="72">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="108">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="144">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="180">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="216">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="252">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="288">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="324">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="360">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="396">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="432">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="com.aryansbtloe.apns-tester.sample.ios">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="16" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="72">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="108">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="144">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="180">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="216">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="252">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="288">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="324">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="360">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="396">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="432">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9M-rX-KC6">
+                                        <rect key="frame" x="153" y="210" width="88" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="Mb8-8b-BHa"/>
+                                            <constraint firstAttribute="height" constant="34" id="bgn-29-zdp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="COPY"/>
+                                        <connections>
+                                            <action selector="copyBundleIdentifier" destination="hhQ-UZ-iE4" eventType="touchUpInside" id="Ahi-oT-nPa"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZP-he-Ehg">
+                                        <rect key="frame" x="141" y="304" width="112.5" height="26.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Certificate">
+                                                <attributes>
+                                                    <color key="NSColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="23" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="72">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="108">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="144">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="180">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="216">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="252">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="288">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="324">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="360">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="396">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="432">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4i-dx-xu7">
+                                        <rect key="frame" x="127" y="340.5" width="140" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="0kS-B6-QMt"/>
+                                            <constraint firstAttribute="height" constant="34" id="7KN-9z-Kjs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="DOWNLOAD"/>
+                                        <connections>
+                                            <action selector="downloadCertificate" destination="hhQ-UZ-iE4" eventType="touchUpInside" id="tUB-4d-0fY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="jcM-3s-4FL"/>
+                                    <constraint firstItem="MVZ-ML-dJY" firstAttribute="top" secondItem="Bdb-N3-CdE" secondAttribute="bottom" constant="60" id="ALF-HI-3WP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Icp-Mk-T3d" secondAttribute="trailing" id="JUz-vf-MHW"/>
+                                    <constraint firstItem="Icp-Mk-T3d" firstAttribute="leading" secondItem="ikj-O2-HrQ" secondAttribute="leading" id="O1O-yC-eHw"/>
+                                    <constraint firstItem="s9M-rX-KC6" firstAttribute="top" secondItem="MVZ-ML-dJY" secondAttribute="bottom" constant="10" id="PXI-0Z-uGD"/>
+                                    <constraint firstItem="Bdb-N3-CdE" firstAttribute="centerX" secondItem="ikj-O2-HrQ" secondAttribute="centerX" id="QH5-7d-zD2"/>
+                                    <constraint firstItem="aZP-he-Ehg" firstAttribute="centerX" secondItem="ikj-O2-HrQ" secondAttribute="centerX" id="RrF-2o-Xyt"/>
+                                    <constraint firstItem="Icp-Mk-T3d" firstAttribute="top" secondItem="ikj-O2-HrQ" secondAttribute="top" id="T4H-K1-Qhk"/>
+                                    <constraint firstItem="s9M-rX-KC6" firstAttribute="centerX" secondItem="ikj-O2-HrQ" secondAttribute="centerX" id="TjQ-Gj-2EY"/>
+                                    <constraint firstItem="MVZ-ML-dJY" firstAttribute="leading" secondItem="ikj-O2-HrQ" secondAttribute="leading" id="Wlk-P3-AR1"/>
+                                    <constraint firstAttribute="trailing" secondItem="MVZ-ML-dJY" secondAttribute="trailing" id="foU-ft-3q1"/>
+                                    <constraint firstItem="o4i-dx-xu7" firstAttribute="centerX" secondItem="ikj-O2-HrQ" secondAttribute="centerX" id="ftL-xh-3zl"/>
+                                    <constraint firstItem="o4i-dx-xu7" firstAttribute="top" secondItem="aZP-he-Ehg" secondAttribute="bottom" constant="10" id="hiM-jj-nAA"/>
+                                    <constraint firstItem="Bdb-N3-CdE" firstAttribute="top" secondItem="Icp-Mk-T3d" secondAttribute="bottom" constant="5" id="smy-un-Yyb"/>
+                                    <constraint firstItem="aZP-he-Ehg" firstAttribute="top" secondItem="s9M-rX-KC6" secondAttribute="bottom" constant="60" id="xXZ-vj-nKf"/>
+                                    <constraint firstAttribute="height" constant="394.5" id="yB8-bh-g9z"/>
+                                    <constraint firstItem="o4i-dx-xu7" firstAttribute="top" secondItem="aZP-he-Ehg" secondAttribute="bottom" constant="10" id="yhT-dH-Zl3"/>
                                 </constraints>
-                                <inset key="titleEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
-                                <state key="normal" title="Copy APNS Device Token">
-                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="fetchAndCopyDeviceToken" destination="hhQ-UZ-iE4" eventType="touchUpInside" id="UxA-Kt-6Zg"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="S7v-Z2-BZw" firstAttribute="top" secondItem="Icp-Mk-T3d" secondAttribute="bottom" constant="20" id="0xo-Rv-Qni"/>
-                            <constraint firstItem="Mha-oS-4YX" firstAttribute="trailing" secondItem="Icp-Mk-T3d" secondAttribute="trailing" constant="10" id="VXG-9T-4iU"/>
-                            <constraint firstItem="Icp-Mk-T3d" firstAttribute="top" secondItem="Mha-oS-4YX" secondAttribute="top" constant="128" id="m71-73-Ovx"/>
-                            <constraint firstItem="Icp-Mk-T3d" firstAttribute="leading" secondItem="Mha-oS-4YX" secondAttribute="leading" constant="10" id="nqx-Nb-mtX"/>
-                            <constraint firstItem="S7v-Z2-BZw" firstAttribute="centerX" secondItem="Ete-3W-ziR" secondAttribute="centerX" id="wto-ff-TLw"/>
+                            <constraint firstItem="ikj-O2-HrQ" firstAttribute="centerY" secondItem="Ete-3W-ziR" secondAttribute="centerY" id="7BT-kD-VL6"/>
+                            <constraint firstItem="Mha-oS-4YX" firstAttribute="trailing" secondItem="ikj-O2-HrQ" secondAttribute="trailing" constant="10" id="Or2-vX-AoE"/>
+                            <constraint firstItem="ikj-O2-HrQ" firstAttribute="leading" secondItem="Mha-oS-4YX" secondAttribute="leading" constant="10" id="z6A-57-07n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mha-oS-4YX"/>
                     </view>

@@ -199,13 +199,13 @@
 		198786202449B79F000E7245 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				19D1B0502486D55E000B2907 /* Push Notification Test ClientRelease.entitlements */,
 				19EFA566244C3CD1002EB33B /* Common */,
 				19BA297A244B5DB500A64168 /* AppDelegate */,
 				19F5C6F82485C0A6006978FB /* HomeViewController.swift */,
 				198786272449B79F000E7245 /* Main.storyboard */,
 				1987862A2449B7A3000E7245 /* Assets.xcassets */,
 				1987862C2449B7A3000E7245 /* LaunchScreen.storyboard */,
+				19D1B0502486D55E000B2907 /* Push Notification Test ClientRelease.entitlements */,
 				1987862F2449B7A3000E7245 /* Info.plist */,
 				19EFA564244C3BAA002EB33B /* GoogleService-Info.plist */,
 			);

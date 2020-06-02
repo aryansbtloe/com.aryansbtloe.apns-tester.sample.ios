@@ -21,12 +21,22 @@ class HomeViewController:BaseViewController {
         AppDelegate.registerForPushNotifications {[weak self] (granted, error) in
             guard let `self` = self else {return}
             if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-                self.deviceTokenLabel.text = appDelegate.deviceToken
+                self.deviceTokenLabel.text = "Device Token\n\(appDelegate.deviceToken)"
                 if let deviceToken = appDelegate.deviceToken {
                     UIPasteboard.general.string = deviceToken
                     self.showAdd()
                 }
             }
+        }
+    }
+    
+    @IBAction func copyBundleIdentifier(){
+        UIPasteboard.general.string = "com.aryansbtloe.apns-tester.sample.ios"
+    }
+    
+    @IBAction func downloadCertificate(){
+        if let url = URL(string: "") {
+            UIApplication.shared.openURL(url)
         }
     }
     
