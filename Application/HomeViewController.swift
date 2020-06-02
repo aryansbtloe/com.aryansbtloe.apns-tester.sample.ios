@@ -33,11 +33,13 @@ class HomeViewController:BaseViewController {
     
     @IBAction func copyBundleIdentifier(){
         UIPasteboard.general.string = "com.aryansbtloe.apns-tester.sample.ios"
+        self.showAdd()
     }
     
     @IBAction func downloadCertificate(){
-        if let url = URL(string: "https://github.com/aryansbtloe/com.aryansbtloe.apns-tester.sample.ios/raw/master/Certificate/aps.cer") {
+        if let url = URL(string: "https://github.com/aryansbtloe/com.aryansbtloe.apns-tester.sample.ios/raw/master/Certificate/") {
             UIApplication.shared.openURL(url)
+            self.showAdd()
         }
     }
     
