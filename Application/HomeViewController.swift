@@ -36,7 +36,7 @@ class HomeViewController:BaseViewController {
     }
     
     @IBAction func downloadCertificate(){
-        if let url = URL(string: "") {
+        if let url = URL(string: "https://github.com/aryansbtloe/com.aryansbtloe.apns-tester.sample.ios/raw/master/Certificate/aps.cer") {
             UIApplication.shared.openURL(url)
         }
     }
