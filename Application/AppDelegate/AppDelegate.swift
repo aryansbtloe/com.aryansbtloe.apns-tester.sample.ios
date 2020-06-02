@@ -18,17 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Utility.setupApp()
-        registerForPushNotifications()
         return true
     }
 
-    func registerForPushNotifications() {
-        UNUserNotificationCenter.current().delegate = self
+    class func registerForPushNotifications(completion:@escaping (Bool, Error?) -> Void) {
+        UNUserNotificationCenter.current().delegate = UIApplication.shared.delegate as? UNUserNotificationCenterDelegate
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
             (granted, error) in
-            guard granted else { return }
+            guard granted else {
+                completion(granted, error)
+                return
+            }
             DispatchQueue.main.async {
                 UIApplication.shared.registerForRemoteNotifications()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    completion(granted, error)
+                }
             }
         }
     }

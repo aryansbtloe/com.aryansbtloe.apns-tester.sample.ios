@@ -18,10 +18,14 @@ class HomeViewController:BaseViewController {
     }
     
     @IBAction func fetchAndCopyDeviceToken(){
-        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-            deviceTokenLabel.text = appDelegate.deviceToken
-            if let deviceToken = appDelegate.deviceToken {
-                UIPasteboard.general.string = deviceToken
+        AppDelegate.registerForPushNotifications {[weak self] (granted, error) in
+            guard let `self` = self else {return}
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                self.deviceTokenLabel.text = appDelegate.deviceToken
+                if let deviceToken = appDelegate.deviceToken {
+                    UIPasteboard.general.string = deviceToken
+                    self.showAdd()
+                }
             }
         }
     }
