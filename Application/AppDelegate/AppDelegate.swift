@@ -49,5 +49,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
         print("Failed to register for remote notifications with error: \(error)")
     }
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+    }
 }
 
