@@ -21,8 +21,8 @@ import UIKit
                 Utility.showAlert(view: view,
                                 title: "Feedback",
                                 message:"How was your Experience ?",
-                                positiveText: "Wonderfull 👍",
-                    negativeText: "Could be Better 👎",
+                                positiveText: "Nice 👍",
+                    negativeText: "I dont like 👎",
                     onPositive: {
                         self.launchStoreKitAlert()
                 }) {}
@@ -134,6 +134,8 @@ class BaseViewController:UIViewController,GADInterstitialDelegate {
 }
 #else
 class BaseViewController:UIViewController {
+    func showAdd() {
+    }
 }
 #endif
 

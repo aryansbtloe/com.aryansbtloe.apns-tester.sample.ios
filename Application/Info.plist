@@ -22,6 +22,8 @@
 	<string>ca-app-pub-7178447751314817~1492197109</string>
 	<key>GADIsAdManagerApp</key>
 	<true/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.developer-tools</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
