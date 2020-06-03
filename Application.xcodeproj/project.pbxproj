@@ -7,44 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19217D00248032580066A7A4 /* AksCommonExtensions + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF1248032580066A7A4 /* AksCommonExtensions + UIImageView.swift */; };
-		19217D01248032580066A7A4 /* AksCommonExtensions + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF2248032580066A7A4 /* AksCommonExtensions + UIViewController.swift */; };
-		19217D02248032580066A7A4 /* AksCommonExtensions + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF3248032580066A7A4 /* AksCommonExtensions + String.swift */; };
-		19217D03248032580066A7A4 /* AksCommonExtensions + Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF4248032580066A7A4 /* AksCommonExtensions + Debug.swift */; };
-		19217D04248032580066A7A4 /* AksCommonExtensions + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF5248032580066A7A4 /* AksCommonExtensions + UIButton.swift */; };
-		19217D05248032580066A7A4 /* AksCommonExtensions + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF6248032580066A7A4 /* AksCommonExtensions + UILabel.swift */; };
-		19217D06248032580066A7A4 /* AksCommonExtensions + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF7248032580066A7A4 /* AksCommonExtensions + CollectionView.swift */; };
-		19217D07248032580066A7A4 /* AksCommonExtensions + Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF8248032580066A7A4 /* AksCommonExtensions + Dictionary.swift */; };
-		19217D08248032580066A7A4 /* AksCommonExtensions + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CF9248032580066A7A4 /* AksCommonExtensions + TableView.swift */; };
-		19217D09248032580066A7A4 /* AksCommonExtensions + Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CFA248032580066A7A4 /* AksCommonExtensions + Image.swift */; };
-		19217D0A248032580066A7A4 /* AksCommonExtensions + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CFB248032580066A7A4 /* AksCommonExtensions + Date.swift */; };
-		19217D0B248032580066A7A4 /* AksCommonExtensions + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CFC248032580066A7A4 /* AksCommonExtensions + View.swift */; };
-		19217D0C248032580066A7A4 /* AksCommonExtensions + Filemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CFD248032580066A7A4 /* AksCommonExtensions + Filemanager.swift */; };
-		19217D0D248032580066A7A4 /* AksCommonExtensions + Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CFE248032580066A7A4 /* AksCommonExtensions + Others.swift */; };
-		19217D0E248032580066A7A4 /* AksCommonExtensions + Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217CFF248032580066A7A4 /* AksCommonExtensions + Error.swift */; };
-		19217D25248032730066A7A4 /* AksCommonFunctions + Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D10248032730066A7A4 /* AksCommonFunctions + Reachability.swift */; };
-		19217D26248032730066A7A4 /* AksCommonFunctions + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D11248032730066A7A4 /* AksCommonFunctions + String.swift */; };
-		19217D27248032730066A7A4 /* AksCommonFunctions + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D12248032730066A7A4 /* AksCommonFunctions + Date.swift */; };
-		19217D28248032730066A7A4 /* AksCommonFunctions + Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D13248032730066A7A4 /* AksCommonFunctions + Application.swift */; };
-		19217D29248032730066A7A4 /* AksCommonFunctions + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D14248032730066A7A4 /* AksCommonFunctions + View.swift */; };
-		19217D2A248032730066A7A4 /* AksCommonFunctions + Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D15248032730066A7A4 /* AksCommonFunctions + Fonts.swift */; };
-		19217D2B248032730066A7A4 /* AksCommonFunctions + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D16248032730066A7A4 /* AksCommonFunctions + Alerts.swift */; };
-		19217D2C248032730066A7A4 /* AksCommonFunctions + ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D17248032730066A7A4 /* AksCommonFunctions + ViewController.swift */; };
-		19217D2D248032730066A7A4 /* AksCommonFunctions + Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D18248032730066A7A4 /* AksCommonFunctions + Url.swift */; };
-		19217D2E248032730066A7A4 /* AksCommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D19248032730066A7A4 /* AksCommonFunctions.swift */; };
-		19217D2F248032730066A7A4 /* AksCommonFunctions + File Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D1A248032730066A7A4 /* AksCommonFunctions + File Operations.swift */; };
-		19217D30248032730066A7A4 /* AksCommonFunctions + Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D1B248032730066A7A4 /* AksCommonFunctions + Errors.swift */; };
-		19217D31248032730066A7A4 /* AksCommonFunctions + Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D1C248032730066A7A4 /* AksCommonFunctions + Animations.swift */; };
-		19217D32248032730066A7A4 /* AksCommonFunctions + Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D1D248032730066A7A4 /* AksCommonFunctions + Localizations.swift */; };
-		19217D33248032730066A7A4 /* AksCommonFunctions + Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D1E248032730066A7A4 /* AksCommonFunctions + Others.swift */; };
-		19217D34248032730066A7A4 /* AksCommonFunctions + Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D1F248032730066A7A4 /* AksCommonFunctions + Permissions.swift */; };
-		19217D35248032730066A7A4 /* AksCommonFunctions + Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D20248032730066A7A4 /* AksCommonFunctions + Validations.swift */; };
-		19217D36248032730066A7A4 /* AksCommonFunctions + User Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D21248032730066A7A4 /* AksCommonFunctions + User Defaults.swift */; };
-		19217D37248032730066A7A4 /* AksCommonFunctions + Image Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D22248032730066A7A4 /* AksCommonFunctions + Image Utils.swift */; };
-		19217D38248032730066A7A4 /* AksCommonFunctions + Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D23248032730066A7A4 /* AksCommonFunctions + Device Info.swift */; };
-		19217D39248032730066A7A4 /* AksCommonFunctions + Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D24248032730066A7A4 /* AksCommonFunctions + Debugging.swift */; };
-		19217D3B248032820066A7A4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19217D3A248032820066A7A4 /* BaseViewController.swift */; };
-		1971694624503C980050A39B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971691F24503C980050A39B /* Utility.swift */; };
+		19697E54248839CE006DF21A /* AksCommonExtensions + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E2C248839CE006DF21A /* AksCommonExtensions + UIImageView.swift */; };
+		19697E55248839CE006DF21A /* AksCommonExtensions + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E2D248839CE006DF21A /* AksCommonExtensions + UIViewController.swift */; };
+		19697E56248839CE006DF21A /* AksCommonExtensions + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E2E248839CE006DF21A /* AksCommonExtensions + String.swift */; };
+		19697E57248839CE006DF21A /* AksCommonExtensions + Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E2F248839CE006DF21A /* AksCommonExtensions + Debug.swift */; };
+		19697E58248839CE006DF21A /* AksCommonExtensions + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E30248839CE006DF21A /* AksCommonExtensions + UIButton.swift */; };
+		19697E59248839CE006DF21A /* AksCommonExtensions + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E31248839CE006DF21A /* AksCommonExtensions + UILabel.swift */; };
+		19697E5A248839CE006DF21A /* AksCommonExtensions + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E32248839CE006DF21A /* AksCommonExtensions + CollectionView.swift */; };
+		19697E5B248839CE006DF21A /* AksCommonExtensions + Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E33248839CE006DF21A /* AksCommonExtensions + Dictionary.swift */; };
+		19697E5C248839CE006DF21A /* AksCommonExtensions + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E34248839CE006DF21A /* AksCommonExtensions + TableView.swift */; };
+		19697E5D248839CE006DF21A /* AksCommonExtensions + Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E35248839CE006DF21A /* AksCommonExtensions + Image.swift */; };
+		19697E5E248839CE006DF21A /* AksCommonExtensions + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E36248839CE006DF21A /* AksCommonExtensions + Date.swift */; };
+		19697E5F248839CE006DF21A /* AksCommonExtensions + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E37248839CE006DF21A /* AksCommonExtensions + View.swift */; };
+		19697E60248839CE006DF21A /* AksCommonExtensions + Filemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E38248839CE006DF21A /* AksCommonExtensions + Filemanager.swift */; };
+		19697E61248839CE006DF21A /* AksCommonExtensions + Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E39248839CE006DF21A /* AksCommonExtensions + Others.swift */; };
+		19697E62248839CE006DF21A /* AksCommonExtensions + Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E3A248839CE006DF21A /* AksCommonExtensions + Error.swift */; };
+		19697E63248839CE006DF21A /* AksCommonFunctions + Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E3C248839CE006DF21A /* AksCommonFunctions + Reachability.swift */; };
+		19697E64248839CE006DF21A /* AksCommonFunctions + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E3D248839CE006DF21A /* AksCommonFunctions + String.swift */; };
+		19697E65248839CE006DF21A /* AksCommonFunctions + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E3E248839CE006DF21A /* AksCommonFunctions + Date.swift */; };
+		19697E66248839CE006DF21A /* AksCommonFunctions + Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E3F248839CE006DF21A /* AksCommonFunctions + Application.swift */; };
+		19697E67248839CE006DF21A /* AksCommonFunctions + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E40248839CE006DF21A /* AksCommonFunctions + View.swift */; };
+		19697E68248839CE006DF21A /* AksCommonFunctions + Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E41248839CE006DF21A /* AksCommonFunctions + Fonts.swift */; };
+		19697E69248839CE006DF21A /* AksCommonFunctions + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E42248839CE006DF21A /* AksCommonFunctions + Alerts.swift */; };
+		19697E6A248839CE006DF21A /* AksCommonFunctions + ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E43248839CE006DF21A /* AksCommonFunctions + ViewController.swift */; };
+		19697E6B248839CE006DF21A /* AksCommonFunctions + Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E44248839CE006DF21A /* AksCommonFunctions + Url.swift */; };
+		19697E6C248839CE006DF21A /* AksCommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E45248839CE006DF21A /* AksCommonFunctions.swift */; };
+		19697E6D248839CE006DF21A /* AksCommonFunctions + File Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E46248839CE006DF21A /* AksCommonFunctions + File Operations.swift */; };
+		19697E6E248839CE006DF21A /* AksCommonFunctions + Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E47248839CE006DF21A /* AksCommonFunctions + Errors.swift */; };
+		19697E6F248839CE006DF21A /* AksCommonFunctions + Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E48248839CE006DF21A /* AksCommonFunctions + Animations.swift */; };
+		19697E70248839CE006DF21A /* AksCommonFunctions + Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E49248839CE006DF21A /* AksCommonFunctions + Localizations.swift */; };
+		19697E71248839CE006DF21A /* AksCommonFunctions + Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E4A248839CE006DF21A /* AksCommonFunctions + Others.swift */; };
+		19697E72248839CE006DF21A /* AksCommonFunctions + Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E4B248839CE006DF21A /* AksCommonFunctions + Permissions.swift */; };
+		19697E73248839CE006DF21A /* AksCommonFunctions + Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E4C248839CE006DF21A /* AksCommonFunctions + Validations.swift */; };
+		19697E74248839CE006DF21A /* AksCommonFunctions + User Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E4D248839CE006DF21A /* AksCommonFunctions + User Defaults.swift */; };
+		19697E75248839CE006DF21A /* AksCommonFunctions + Image Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E4E248839CE006DF21A /* AksCommonFunctions + Image Utils.swift */; };
+		19697E76248839CE006DF21A /* AksCommonFunctions + Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E4F248839CE006DF21A /* AksCommonFunctions + Device Info.swift */; };
+		19697E77248839CE006DF21A /* AksCommonFunctions + Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E50248839CE006DF21A /* AksCommonFunctions + Debugging.swift */; };
+		19697E78248839CE006DF21A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E52248839CE006DF21A /* BaseViewController.swift */; };
+		19697E79248839CE006DF21A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E53248839CE006DF21A /* Utility.swift */; };
+		19697E7D24883A24006DF21A /* Utility + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E7B24883A23006DF21A /* Utility + Extension.swift */; };
+		19697E7E24883A24006DF21A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E7C24883A23006DF21A /* Constants.swift */; };
 		198786222449B79F000E7245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198786212449B79F000E7245 /* AppDelegate.swift */; };
 		198786292449B79F000E7245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198786272449B79F000E7245 /* Main.storyboard */; };
 		1987862B2449B7A3000E7245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1987862A2449B7A3000E7245 /* Assets.xcassets */; };
@@ -55,44 +57,46 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19217CF1248032580066A7A4 /* AksCommonExtensions + UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UIImageView.swift"; sourceTree = "<group>"; };
-		19217CF2248032580066A7A4 /* AksCommonExtensions + UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UIViewController.swift"; sourceTree = "<group>"; };
-		19217CF3248032580066A7A4 /* AksCommonExtensions + String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + String.swift"; sourceTree = "<group>"; };
-		19217CF4248032580066A7A4 /* AksCommonExtensions + Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Debug.swift"; sourceTree = "<group>"; };
-		19217CF5248032580066A7A4 /* AksCommonExtensions + UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UIButton.swift"; sourceTree = "<group>"; };
-		19217CF6248032580066A7A4 /* AksCommonExtensions + UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UILabel.swift"; sourceTree = "<group>"; };
-		19217CF7248032580066A7A4 /* AksCommonExtensions + CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + CollectionView.swift"; sourceTree = "<group>"; };
-		19217CF8248032580066A7A4 /* AksCommonExtensions + Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Dictionary.swift"; sourceTree = "<group>"; };
-		19217CF9248032580066A7A4 /* AksCommonExtensions + TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + TableView.swift"; sourceTree = "<group>"; };
-		19217CFA248032580066A7A4 /* AksCommonExtensions + Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Image.swift"; sourceTree = "<group>"; };
-		19217CFB248032580066A7A4 /* AksCommonExtensions + Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Date.swift"; sourceTree = "<group>"; };
-		19217CFC248032580066A7A4 /* AksCommonExtensions + View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + View.swift"; sourceTree = "<group>"; };
-		19217CFD248032580066A7A4 /* AksCommonExtensions + Filemanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Filemanager.swift"; sourceTree = "<group>"; };
-		19217CFE248032580066A7A4 /* AksCommonExtensions + Others.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Others.swift"; sourceTree = "<group>"; };
-		19217CFF248032580066A7A4 /* AksCommonExtensions + Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Error.swift"; sourceTree = "<group>"; };
-		19217D10248032730066A7A4 /* AksCommonFunctions + Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Reachability.swift"; sourceTree = "<group>"; };
-		19217D11248032730066A7A4 /* AksCommonFunctions + String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + String.swift"; sourceTree = "<group>"; };
-		19217D12248032730066A7A4 /* AksCommonFunctions + Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Date.swift"; sourceTree = "<group>"; };
-		19217D13248032730066A7A4 /* AksCommonFunctions + Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Application.swift"; sourceTree = "<group>"; };
-		19217D14248032730066A7A4 /* AksCommonFunctions + View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + View.swift"; sourceTree = "<group>"; };
-		19217D15248032730066A7A4 /* AksCommonFunctions + Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Fonts.swift"; sourceTree = "<group>"; };
-		19217D16248032730066A7A4 /* AksCommonFunctions + Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Alerts.swift"; sourceTree = "<group>"; };
-		19217D17248032730066A7A4 /* AksCommonFunctions + ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + ViewController.swift"; sourceTree = "<group>"; };
-		19217D18248032730066A7A4 /* AksCommonFunctions + Url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Url.swift"; sourceTree = "<group>"; };
-		19217D19248032730066A7A4 /* AksCommonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AksCommonFunctions.swift; sourceTree = "<group>"; };
-		19217D1A248032730066A7A4 /* AksCommonFunctions + File Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + File Operations.swift"; sourceTree = "<group>"; };
-		19217D1B248032730066A7A4 /* AksCommonFunctions + Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Errors.swift"; sourceTree = "<group>"; };
-		19217D1C248032730066A7A4 /* AksCommonFunctions + Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Animations.swift"; sourceTree = "<group>"; };
-		19217D1D248032730066A7A4 /* AksCommonFunctions + Localizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Localizations.swift"; sourceTree = "<group>"; };
-		19217D1E248032730066A7A4 /* AksCommonFunctions + Others.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Others.swift"; sourceTree = "<group>"; };
-		19217D1F248032730066A7A4 /* AksCommonFunctions + Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Permissions.swift"; sourceTree = "<group>"; };
-		19217D20248032730066A7A4 /* AksCommonFunctions + Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Validations.swift"; sourceTree = "<group>"; };
-		19217D21248032730066A7A4 /* AksCommonFunctions + User Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + User Defaults.swift"; sourceTree = "<group>"; };
-		19217D22248032730066A7A4 /* AksCommonFunctions + Image Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Image Utils.swift"; sourceTree = "<group>"; };
-		19217D23248032730066A7A4 /* AksCommonFunctions + Device Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Device Info.swift"; sourceTree = "<group>"; };
-		19217D24248032730066A7A4 /* AksCommonFunctions + Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Debugging.swift"; sourceTree = "<group>"; };
-		19217D3A248032820066A7A4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		1971691F24503C980050A39B /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		19697E2C248839CE006DF21A /* AksCommonExtensions + UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UIImageView.swift"; sourceTree = "<group>"; };
+		19697E2D248839CE006DF21A /* AksCommonExtensions + UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UIViewController.swift"; sourceTree = "<group>"; };
+		19697E2E248839CE006DF21A /* AksCommonExtensions + String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + String.swift"; sourceTree = "<group>"; };
+		19697E2F248839CE006DF21A /* AksCommonExtensions + Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Debug.swift"; sourceTree = "<group>"; };
+		19697E30248839CE006DF21A /* AksCommonExtensions + UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UIButton.swift"; sourceTree = "<group>"; };
+		19697E31248839CE006DF21A /* AksCommonExtensions + UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UILabel.swift"; sourceTree = "<group>"; };
+		19697E32248839CE006DF21A /* AksCommonExtensions + CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + CollectionView.swift"; sourceTree = "<group>"; };
+		19697E33248839CE006DF21A /* AksCommonExtensions + Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Dictionary.swift"; sourceTree = "<group>"; };
+		19697E34248839CE006DF21A /* AksCommonExtensions + TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + TableView.swift"; sourceTree = "<group>"; };
+		19697E35248839CE006DF21A /* AksCommonExtensions + Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Image.swift"; sourceTree = "<group>"; };
+		19697E36248839CE006DF21A /* AksCommonExtensions + Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Date.swift"; sourceTree = "<group>"; };
+		19697E37248839CE006DF21A /* AksCommonExtensions + View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + View.swift"; sourceTree = "<group>"; };
+		19697E38248839CE006DF21A /* AksCommonExtensions + Filemanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Filemanager.swift"; sourceTree = "<group>"; };
+		19697E39248839CE006DF21A /* AksCommonExtensions + Others.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Others.swift"; sourceTree = "<group>"; };
+		19697E3A248839CE006DF21A /* AksCommonExtensions + Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + Error.swift"; sourceTree = "<group>"; };
+		19697E3C248839CE006DF21A /* AksCommonFunctions + Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Reachability.swift"; sourceTree = "<group>"; };
+		19697E3D248839CE006DF21A /* AksCommonFunctions + String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + String.swift"; sourceTree = "<group>"; };
+		19697E3E248839CE006DF21A /* AksCommonFunctions + Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Date.swift"; sourceTree = "<group>"; };
+		19697E3F248839CE006DF21A /* AksCommonFunctions + Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Application.swift"; sourceTree = "<group>"; };
+		19697E40248839CE006DF21A /* AksCommonFunctions + View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + View.swift"; sourceTree = "<group>"; };
+		19697E41248839CE006DF21A /* AksCommonFunctions + Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Fonts.swift"; sourceTree = "<group>"; };
+		19697E42248839CE006DF21A /* AksCommonFunctions + Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Alerts.swift"; sourceTree = "<group>"; };
+		19697E43248839CE006DF21A /* AksCommonFunctions + ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + ViewController.swift"; sourceTree = "<group>"; };
+		19697E44248839CE006DF21A /* AksCommonFunctions + Url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Url.swift"; sourceTree = "<group>"; };
+		19697E45248839CE006DF21A /* AksCommonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AksCommonFunctions.swift; sourceTree = "<group>"; };
+		19697E46248839CE006DF21A /* AksCommonFunctions + File Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + File Operations.swift"; sourceTree = "<group>"; };
+		19697E47248839CE006DF21A /* AksCommonFunctions + Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Errors.swift"; sourceTree = "<group>"; };
+		19697E48248839CE006DF21A /* AksCommonFunctions + Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Animations.swift"; sourceTree = "<group>"; };
+		19697E49248839CE006DF21A /* AksCommonFunctions + Localizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Localizations.swift"; sourceTree = "<group>"; };
+		19697E4A248839CE006DF21A /* AksCommonFunctions + Others.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Others.swift"; sourceTree = "<group>"; };
+		19697E4B248839CE006DF21A /* AksCommonFunctions + Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Permissions.swift"; sourceTree = "<group>"; };
+		19697E4C248839CE006DF21A /* AksCommonFunctions + Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Validations.swift"; sourceTree = "<group>"; };
+		19697E4D248839CE006DF21A /* AksCommonFunctions + User Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + User Defaults.swift"; sourceTree = "<group>"; };
+		19697E4E248839CE006DF21A /* AksCommonFunctions + Image Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Image Utils.swift"; sourceTree = "<group>"; };
+		19697E4F248839CE006DF21A /* AksCommonFunctions + Device Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Device Info.swift"; sourceTree = "<group>"; };
+		19697E50248839CE006DF21A /* AksCommonFunctions + Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Debugging.swift"; sourceTree = "<group>"; };
+		19697E52248839CE006DF21A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		19697E53248839CE006DF21A /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		19697E7B24883A23006DF21A /* Utility + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Utility + Extension.swift"; sourceTree = "<group>"; };
+		19697E7C24883A23006DF21A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1987861E2449B79F000E7245 /* Push Notification : Receiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Notification : Receiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		198786212449B79F000E7245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198786282449B79F000E7245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,61 +123,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19217CF0248032580066A7A4 /* Extensions */ = {
+		19697E2A248839CE006DF21A /* com.aryansbtloe.core */ = {
 			isa = PBXGroup;
 			children = (
-				19217CF1248032580066A7A4 /* AksCommonExtensions + UIImageView.swift */,
-				19217CF2248032580066A7A4 /* AksCommonExtensions + UIViewController.swift */,
-				19217CF3248032580066A7A4 /* AksCommonExtensions + String.swift */,
-				19217CF4248032580066A7A4 /* AksCommonExtensions + Debug.swift */,
-				19217CF5248032580066A7A4 /* AksCommonExtensions + UIButton.swift */,
-				19217CF6248032580066A7A4 /* AksCommonExtensions + UILabel.swift */,
-				19217CF7248032580066A7A4 /* AksCommonExtensions + CollectionView.swift */,
-				19217CF8248032580066A7A4 /* AksCommonExtensions + Dictionary.swift */,
-				19217CF9248032580066A7A4 /* AksCommonExtensions + TableView.swift */,
-				19217CFA248032580066A7A4 /* AksCommonExtensions + Image.swift */,
-				19217CFB248032580066A7A4 /* AksCommonExtensions + Date.swift */,
-				19217CFC248032580066A7A4 /* AksCommonExtensions + View.swift */,
-				19217CFD248032580066A7A4 /* AksCommonExtensions + Filemanager.swift */,
-				19217CFE248032580066A7A4 /* AksCommonExtensions + Others.swift */,
-				19217CFF248032580066A7A4 /* AksCommonExtensions + Error.swift */,
+				19697E2B248839CE006DF21A /* Extensions */,
+				19697E3B248839CE006DF21A /* Functions */,
+				19697E51248839CE006DF21A /* Utility */,
+			);
+			name = com.aryansbtloe.core;
+			path = ../../com.aryansbtloe.core;
+			sourceTree = "<group>";
+		};
+		19697E2B248839CE006DF21A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19697E2C248839CE006DF21A /* AksCommonExtensions + UIImageView.swift */,
+				19697E2D248839CE006DF21A /* AksCommonExtensions + UIViewController.swift */,
+				19697E2E248839CE006DF21A /* AksCommonExtensions + String.swift */,
+				19697E2F248839CE006DF21A /* AksCommonExtensions + Debug.swift */,
+				19697E30248839CE006DF21A /* AksCommonExtensions + UIButton.swift */,
+				19697E31248839CE006DF21A /* AksCommonExtensions + UILabel.swift */,
+				19697E32248839CE006DF21A /* AksCommonExtensions + CollectionView.swift */,
+				19697E33248839CE006DF21A /* AksCommonExtensions + Dictionary.swift */,
+				19697E34248839CE006DF21A /* AksCommonExtensions + TableView.swift */,
+				19697E35248839CE006DF21A /* AksCommonExtensions + Image.swift */,
+				19697E36248839CE006DF21A /* AksCommonExtensions + Date.swift */,
+				19697E37248839CE006DF21A /* AksCommonExtensions + View.swift */,
+				19697E38248839CE006DF21A /* AksCommonExtensions + Filemanager.swift */,
+				19697E39248839CE006DF21A /* AksCommonExtensions + Others.swift */,
+				19697E3A248839CE006DF21A /* AksCommonExtensions + Error.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		19217D0F248032730066A7A4 /* Functions */ = {
+		19697E3B248839CE006DF21A /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				19217D10248032730066A7A4 /* AksCommonFunctions + Reachability.swift */,
-				19217D11248032730066A7A4 /* AksCommonFunctions + String.swift */,
-				19217D12248032730066A7A4 /* AksCommonFunctions + Date.swift */,
-				19217D13248032730066A7A4 /* AksCommonFunctions + Application.swift */,
-				19217D14248032730066A7A4 /* AksCommonFunctions + View.swift */,
-				19217D15248032730066A7A4 /* AksCommonFunctions + Fonts.swift */,
-				19217D16248032730066A7A4 /* AksCommonFunctions + Alerts.swift */,
-				19217D17248032730066A7A4 /* AksCommonFunctions + ViewController.swift */,
-				19217D18248032730066A7A4 /* AksCommonFunctions + Url.swift */,
-				19217D19248032730066A7A4 /* AksCommonFunctions.swift */,
-				19217D1A248032730066A7A4 /* AksCommonFunctions + File Operations.swift */,
-				19217D1B248032730066A7A4 /* AksCommonFunctions + Errors.swift */,
-				19217D1C248032730066A7A4 /* AksCommonFunctions + Animations.swift */,
-				19217D1D248032730066A7A4 /* AksCommonFunctions + Localizations.swift */,
-				19217D1E248032730066A7A4 /* AksCommonFunctions + Others.swift */,
-				19217D1F248032730066A7A4 /* AksCommonFunctions + Permissions.swift */,
-				19217D20248032730066A7A4 /* AksCommonFunctions + Validations.swift */,
-				19217D21248032730066A7A4 /* AksCommonFunctions + User Defaults.swift */,
-				19217D22248032730066A7A4 /* AksCommonFunctions + Image Utils.swift */,
-				19217D23248032730066A7A4 /* AksCommonFunctions + Device Info.swift */,
-				19217D24248032730066A7A4 /* AksCommonFunctions + Debugging.swift */,
+				19697E3C248839CE006DF21A /* AksCommonFunctions + Reachability.swift */,
+				19697E3D248839CE006DF21A /* AksCommonFunctions + String.swift */,
+				19697E3E248839CE006DF21A /* AksCommonFunctions + Date.swift */,
+				19697E3F248839CE006DF21A /* AksCommonFunctions + Application.swift */,
+				19697E40248839CE006DF21A /* AksCommonFunctions + View.swift */,
+				19697E41248839CE006DF21A /* AksCommonFunctions + Fonts.swift */,
+				19697E42248839CE006DF21A /* AksCommonFunctions + Alerts.swift */,
+				19697E43248839CE006DF21A /* AksCommonFunctions + ViewController.swift */,
+				19697E44248839CE006DF21A /* AksCommonFunctions + Url.swift */,
+				19697E45248839CE006DF21A /* AksCommonFunctions.swift */,
+				19697E46248839CE006DF21A /* AksCommonFunctions + File Operations.swift */,
+				19697E47248839CE006DF21A /* AksCommonFunctions + Errors.swift */,
+				19697E48248839CE006DF21A /* AksCommonFunctions + Animations.swift */,
+				19697E49248839CE006DF21A /* AksCommonFunctions + Localizations.swift */,
+				19697E4A248839CE006DF21A /* AksCommonFunctions + Others.swift */,
+				19697E4B248839CE006DF21A /* AksCommonFunctions + Permissions.swift */,
+				19697E4C248839CE006DF21A /* AksCommonFunctions + Validations.swift */,
+				19697E4D248839CE006DF21A /* AksCommonFunctions + User Defaults.swift */,
+				19697E4E248839CE006DF21A /* AksCommonFunctions + Image Utils.swift */,
+				19697E4F248839CE006DF21A /* AksCommonFunctions + Device Info.swift */,
+				19697E50248839CE006DF21A /* AksCommonFunctions + Debugging.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
 		};
-		1971691D24503C980050A39B /* Utility */ = {
+		19697E51248839CE006DF21A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				19217D3A248032820066A7A4 /* BaseViewController.swift */,
-				1971691F24503C980050A39B /* Utility.swift */,
+				19697E52248839CE006DF21A /* BaseViewController.swift */,
+				19697E53248839CE006DF21A /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		19697E7A24883A23006DF21A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				19697E7B24883A23006DF21A /* Utility + Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -199,6 +222,7 @@
 		198786202449B79F000E7245 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				19697E2A248839CE006DF21A /* com.aryansbtloe.core */,
 				19EFA566244C3CD1002EB33B /* Common */,
 				19BA297A244B5DB500A64168 /* AppDelegate */,
 				19F5C6F82485C0A6006978FB /* HomeViewController.swift */,
@@ -223,9 +247,8 @@
 		19EFA566244C3CD1002EB33B /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				19217CF0248032580066A7A4 /* Extensions */,
-				19217D0F248032730066A7A4 /* Functions */,
-				1971691D24503C980050A39B /* Utility */,
+				19697E7C24883A23006DF21A /* Constants.swift */,
+				19697E7A24883A23006DF21A /* Utility */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -363,46 +386,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19217D09248032580066A7A4 /* AksCommonExtensions + Image.swift in Sources */,
-				19217D26248032730066A7A4 /* AksCommonFunctions + String.swift in Sources */,
-				19217D08248032580066A7A4 /* AksCommonExtensions + TableView.swift in Sources */,
-				19217D2C248032730066A7A4 /* AksCommonFunctions + ViewController.swift in Sources */,
-				19217D0C248032580066A7A4 /* AksCommonExtensions + Filemanager.swift in Sources */,
-				19217D30248032730066A7A4 /* AksCommonFunctions + Errors.swift in Sources */,
-				19217D0D248032580066A7A4 /* AksCommonExtensions + Others.swift in Sources */,
-				19217D04248032580066A7A4 /* AksCommonExtensions + UIButton.swift in Sources */,
+				19697E56248839CE006DF21A /* AksCommonExtensions + String.swift in Sources */,
+				19697E5A248839CE006DF21A /* AksCommonExtensions + CollectionView.swift in Sources */,
+				19697E77248839CE006DF21A /* AksCommonFunctions + Debugging.swift in Sources */,
+				19697E62248839CE006DF21A /* AksCommonExtensions + Error.swift in Sources */,
 				198786222449B79F000E7245 /* AppDelegate.swift in Sources */,
-				19217D06248032580066A7A4 /* AksCommonExtensions + CollectionView.swift in Sources */,
-				19217D01248032580066A7A4 /* AksCommonExtensions + UIViewController.swift in Sources */,
-				19217D32248032730066A7A4 /* AksCommonFunctions + Localizations.swift in Sources */,
-				19217D28248032730066A7A4 /* AksCommonFunctions + Application.swift in Sources */,
-				19217D35248032730066A7A4 /* AksCommonFunctions + Validations.swift in Sources */,
-				1971694624503C980050A39B /* Utility.swift in Sources */,
-				19217D25248032730066A7A4 /* AksCommonFunctions + Reachability.swift in Sources */,
-				19217D2D248032730066A7A4 /* AksCommonFunctions + Url.swift in Sources */,
-				19217D38248032730066A7A4 /* AksCommonFunctions + Device Info.swift in Sources */,
-				19217D03248032580066A7A4 /* AksCommonExtensions + Debug.swift in Sources */,
-				19217D05248032580066A7A4 /* AksCommonExtensions + UILabel.swift in Sources */,
-				19217D2E248032730066A7A4 /* AksCommonFunctions.swift in Sources */,
-				19217D07248032580066A7A4 /* AksCommonExtensions + Dictionary.swift in Sources */,
-				19217D31248032730066A7A4 /* AksCommonFunctions + Animations.swift in Sources */,
-				19217D39248032730066A7A4 /* AksCommonFunctions + Debugging.swift in Sources */,
-				19217D0E248032580066A7A4 /* AksCommonExtensions + Error.swift in Sources */,
-				19217D0A248032580066A7A4 /* AksCommonExtensions + Date.swift in Sources */,
-				19217D3B248032820066A7A4 /* BaseViewController.swift in Sources */,
-				19217D29248032730066A7A4 /* AksCommonFunctions + View.swift in Sources */,
-				19217D2A248032730066A7A4 /* AksCommonFunctions + Fonts.swift in Sources */,
-				19217D37248032730066A7A4 /* AksCommonFunctions + Image Utils.swift in Sources */,
-				19217D36248032730066A7A4 /* AksCommonFunctions + User Defaults.swift in Sources */,
-				19217D0B248032580066A7A4 /* AksCommonExtensions + View.swift in Sources */,
-				19217D02248032580066A7A4 /* AksCommonExtensions + String.swift in Sources */,
-				19217D34248032730066A7A4 /* AksCommonFunctions + Permissions.swift in Sources */,
-				19217D2F248032730066A7A4 /* AksCommonFunctions + File Operations.swift in Sources */,
+				19697E68248839CE006DF21A /* AksCommonFunctions + Fonts.swift in Sources */,
+				19697E59248839CE006DF21A /* AksCommonExtensions + UILabel.swift in Sources */,
+				19697E79248839CE006DF21A /* Utility.swift in Sources */,
+				19697E7D24883A24006DF21A /* Utility + Extension.swift in Sources */,
+				19697E65248839CE006DF21A /* AksCommonFunctions + Date.swift in Sources */,
+				19697E61248839CE006DF21A /* AksCommonExtensions + Others.swift in Sources */,
+				19697E7E24883A24006DF21A /* Constants.swift in Sources */,
+				19697E6D248839CE006DF21A /* AksCommonFunctions + File Operations.swift in Sources */,
+				19697E54248839CE006DF21A /* AksCommonExtensions + UIImageView.swift in Sources */,
+				19697E6B248839CE006DF21A /* AksCommonFunctions + Url.swift in Sources */,
+				19697E55248839CE006DF21A /* AksCommonExtensions + UIViewController.swift in Sources */,
+				19697E60248839CE006DF21A /* AksCommonExtensions + Filemanager.swift in Sources */,
+				19697E6A248839CE006DF21A /* AksCommonFunctions + ViewController.swift in Sources */,
+				19697E71248839CE006DF21A /* AksCommonFunctions + Others.swift in Sources */,
+				19697E6E248839CE006DF21A /* AksCommonFunctions + Errors.swift in Sources */,
+				19697E63248839CE006DF21A /* AksCommonFunctions + Reachability.swift in Sources */,
+				19697E57248839CE006DF21A /* AksCommonExtensions + Debug.swift in Sources */,
+				19697E66248839CE006DF21A /* AksCommonFunctions + Application.swift in Sources */,
+				19697E58248839CE006DF21A /* AksCommonExtensions + UIButton.swift in Sources */,
+				19697E74248839CE006DF21A /* AksCommonFunctions + User Defaults.swift in Sources */,
+				19697E5E248839CE006DF21A /* AksCommonExtensions + Date.swift in Sources */,
+				19697E70248839CE006DF21A /* AksCommonFunctions + Localizations.swift in Sources */,
+				19697E69248839CE006DF21A /* AksCommonFunctions + Alerts.swift in Sources */,
+				19697E67248839CE006DF21A /* AksCommonFunctions + View.swift in Sources */,
+				19697E5C248839CE006DF21A /* AksCommonExtensions + TableView.swift in Sources */,
+				19697E64248839CE006DF21A /* AksCommonFunctions + String.swift in Sources */,
+				19697E72248839CE006DF21A /* AksCommonFunctions + Permissions.swift in Sources */,
+				19697E5B248839CE006DF21A /* AksCommonExtensions + Dictionary.swift in Sources */,
+				19697E75248839CE006DF21A /* AksCommonFunctions + Image Utils.swift in Sources */,
 				19F5C6F92485C0A6006978FB /* HomeViewController.swift in Sources */,
-				19217D33248032730066A7A4 /* AksCommonFunctions + Others.swift in Sources */,
-				19217D00248032580066A7A4 /* AksCommonExtensions + UIImageView.swift in Sources */,
-				19217D2B248032730066A7A4 /* AksCommonFunctions + Alerts.swift in Sources */,
-				19217D27248032730066A7A4 /* AksCommonFunctions + Date.swift in Sources */,
+				19697E5D248839CE006DF21A /* AksCommonExtensions + Image.swift in Sources */,
+				19697E78248839CE006DF21A /* BaseViewController.swift in Sources */,
+				19697E6F248839CE006DF21A /* AksCommonFunctions + Animations.swift in Sources */,
+				19697E73248839CE006DF21A /* AksCommonFunctions + Validations.swift in Sources */,
+				19697E6C248839CE006DF21A /* AksCommonFunctions.swift in Sources */,
+				19697E5F248839CE006DF21A /* AksCommonExtensions + View.swift in Sources */,
+				19697E76248839CE006DF21A /* AksCommonFunctions + Device Info.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
