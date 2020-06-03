@@ -93,7 +93,7 @@
 		19217D24248032730066A7A4 /* AksCommonFunctions + Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonFunctions + Debugging.swift"; sourceTree = "<group>"; };
 		19217D3A248032820066A7A4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1971691F24503C980050A39B /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		1987861E2449B79F000E7245 /* Push Notification Test Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Notification Test Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1987861E2449B79F000E7245 /* Push Notification : Receiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Notification : Receiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		198786212449B79F000E7245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198786282449B79F000E7245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1987862A2449B7A3000E7245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 		1987861F2449B79F000E7245 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1987861E2449B79F000E7245 /* Push Notification Test Client.app */,
+				1987861E2449B79F000E7245 /* Push Notification : Receiver.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,7 +266,7 @@
 			);
 			name = Application;
 			productName = Bible;
-			productReference = 1987861E2449B79F000E7245 /* Push Notification Test Client.app */;
+			productReference = 1987861E2449B79F000E7245 /* Push Notification : Receiver.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -550,7 +550,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -559,7 +559,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aryansbtloe.apns-tester.sample.ios";
-				PRODUCT_NAME = "Push Notification Test Client";
+				PRODUCT_NAME = "Push Notification : Receiver";
 				PROVISIONING_PROFILE_SPECIFIER = com.aryansbtloe.bible.ios.development;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -575,7 +575,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification Test ClientRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -584,7 +584,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aryansbtloe.apns-tester.sample.ios";
-				PRODUCT_NAME = "Push Notification Test Client";
+				PRODUCT_NAME = "Push Notification : Receiver";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;

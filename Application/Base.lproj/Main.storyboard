@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikj-O2-HrQ">
-                                <rect key="frame" x="10" y="251" width="394" height="394.5"/>
+                                <rect key="frame" x="10" y="315" width="394" height="394.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Token" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Icp-Mk-T3d">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="64"/>
@@ -241,7 +241,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtG-9Q-W9V">
-                                <rect key="frame" x="10" y="126.5" width="394" height="79.5"/>
+                                <rect key="frame" x="10" y="190.5" width="394" height="79.5"/>
                                 <string key="text">You can test your server side APNS implementation by sending push notification to this tester application. Just use device token , bundle id and certificate provided below</string>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -250,7 +250,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ikj-O2-HrQ" firstAttribute="centerY" secondItem="Ete-3W-ziR" secondAttribute="centerY" id="7BT-kD-VL6"/>
+                            <constraint firstItem="ikj-O2-HrQ" firstAttribute="centerY" secondItem="Ete-3W-ziR" secondAttribute="centerY" constant="64" id="7BT-kD-VL6"/>
                             <constraint firstItem="Mha-oS-4YX" firstAttribute="trailing" secondItem="ikj-O2-HrQ" secondAttribute="trailing" constant="10" id="Or2-vX-AoE"/>
                             <constraint firstItem="ikj-O2-HrQ" firstAttribute="top" secondItem="YtG-9Q-W9V" secondAttribute="bottom" constant="45" id="coD-Kk-b5e"/>
                             <constraint firstItem="Mha-oS-4YX" firstAttribute="trailing" secondItem="YtG-9Q-W9V" secondAttribute="trailing" constant="10" id="ggc-jc-02p"/>
