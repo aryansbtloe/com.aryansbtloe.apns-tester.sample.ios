@@ -99,7 +99,7 @@
 		1987862A2449B7A3000E7245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1987862D2449B7A3000E7245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1987862F2449B7A3000E7245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19D1B0502486D55E000B2907 /* Push Notification Test ClientRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Push Notification Test ClientRelease.entitlements"; sourceTree = "<group>"; };
+		19D1B0502486D55E000B2907 /* Push Notification Test Client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Push Notification Test Client.entitlements"; sourceTree = "<group>"; };
 		19EFA564244C3BAA002EB33B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19F5C6F82485C0A6006978FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		85D15C00B75CFF81B5434EA4 /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,7 +205,7 @@
 				198786272449B79F000E7245 /* Main.storyboard */,
 				1987862A2449B7A3000E7245 /* Assets.xcassets */,
 				1987862C2449B7A3000E7245 /* LaunchScreen.storyboard */,
-				19D1B0502486D55E000B2907 /* Push Notification Test ClientRelease.entitlements */,
+				19D1B0502486D55E000B2907 /* Push Notification Test Client.entitlements */,
 				1987862F2449B7A3000E7245 /* Info.plist */,
 				19EFA564244C3BAA002EB33B /* GoogleService-Info.plist */,
 			);
@@ -547,7 +547,7 @@
 			baseConfigurationReference = CAE4E96D1F116A37713ACBDE /* Pods-Application.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification : Receiver.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification : ReceiverDebug.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -574,7 +574,7 @@
 			baseConfigurationReference = CE4A93622FCF62E1982CBF2B /* Pods-Application.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification Test ClientRelease.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification Test Client.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
