@@ -110,8 +110,10 @@ extension CodingViewController : UITableViewDataSource {
             let item = modals[indexPath.row]
             if let title = item["title"] {
                 cell.textLabel?.text = title
-                cell.textLabel?.textColor = .darkGray
+                cell.textLabel?.textColor = .white
                 cell.textLabel?.font = .systemFont(ofSize: 18)
+                cell.backgroundColor = .black
+                cell.contentView.backgroundColor = .black
             }
             return cell
         }

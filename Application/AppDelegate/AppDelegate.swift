@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Utility.setupApp()
+        Utility.setupCommonAppearance()
         UNUserNotificationCenter.current().delegate = UIApplication.shared.delegate as? AppDelegate
         return true
     }

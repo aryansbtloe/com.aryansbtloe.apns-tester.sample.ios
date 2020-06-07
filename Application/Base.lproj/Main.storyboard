@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="hhQ-UZ-iE4" customClass="HomeViewController" customModule="Push_Notification___Receiver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ete-3W-ziR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikj-O2-HrQ">
-                                <rect key="frame" x="10" y="315" width="394" height="394.5"/>
+                                <rect key="frame" x="10" y="229.5" width="394" height="394.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Token" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Icp-Mk-T3d">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="64"/>
@@ -241,7 +241,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtG-9Q-W9V">
-                                <rect key="frame" x="10" y="190.5" width="394" height="79.5"/>
+                                <rect key="frame" x="10" y="105" width="394" height="79.5"/>
                                 <string key="text">You can test your server side APNS implementation by sending push notification to this tester application. Just use device token , bundle id and certificate provided below</string>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -273,7 +273,9 @@
             <objects>
                 <tabBarController id="taA-Cd-UsI" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="chc-ON-n8B"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xv9-u6-thV">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="xv9-u6-thV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,18 +283,21 @@
                     <connections>
                         <segue destination="e8z-KV-2mh" kind="relationship" relationship="viewControllers" id="NWg-8z-g9S"/>
                         <segue destination="ZZm-Nd-aH0" kind="relationship" relationship="viewControllers" id="u02-Tu-51Q"/>
+                        <segue destination="1K0-Fc-rul" kind="relationship" relationship="viewControllers" id="3ak-9m-vDG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTe-Xp-RL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2058" y="-1456"/>
+            <point key="canvasLocation" x="-2381" y="-1008"/>
         </scene>
         <!--Notification-->
         <scene sceneID="iB4-zb-p8x">
             <objects>
                 <navigationController id="e8z-KV-2mh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notification" selectedImage="bell.fill" catalog="system" id="InL-9J-jyC"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lyB-yB-dGl">
+                    <tabBarItem key="tabBarItem" title="Notification" image="bell.fill" catalog="system" id="InL-9J-jyC"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="lyB-yB-dGl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -308,8 +313,10 @@
         <scene sceneID="GA4-Kk-Dgi">
             <objects>
                 <navigationController id="ZZm-Nd-aH0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Code" selectedImage="text.insert" catalog="system" id="LCA-xl-OnQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q11-YW-nYB">
+                    <tabBarItem key="tabBarItem" title="Code" image="doc.text" catalog="system" id="LCA-xl-OnQ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="q11-YW-nYB">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -326,19 +333,19 @@
             <objects>
                 <viewController id="rhi-79-wEQ" customClass="CodingViewController" customModule="Push_Notification___Receiver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uao-45-4rA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O0g-wb-FJX">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="rhi-79-wEQ" id="V0U-2Z-ceC"/>
                                     <outlet property="delegate" destination="rhi-79-wEQ" id="PWP-jJ-gcb"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="O0g-wb-FJX" firstAttribute="leading" secondItem="Hb8-X5-hlh" secondAttribute="leading" id="ANJ-Xi-bDS"/>
                             <constraint firstItem="Hb8-X5-hlh" firstAttribute="trailing" secondItem="O0g-wb-FJX" secondAttribute="trailing" id="Rx9-ex-AAh"/>
@@ -361,11 +368,11 @@
             <objects>
                 <viewController storyboardIdentifier="TextualShowCaseViewController" id="xG7-BY-mUp" customClass="TextualShowCaseViewController" customModule="Push_Notification___Receiver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QOd-Rr-4Se">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XiU-Lk-1UX">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -381,18 +388,117 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dFZ-ek-mal"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <connections>
                         <outlet property="textView" destination="XiU-Lk-1UX" id="V4e-l6-UO5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOb-BR-UEU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="-1008"/>
+            <point key="canvasLocation" x="771" y="-1008"/>
+        </scene>
+        <!--Need Help ?-->
+        <scene sceneID="1fH-Tv-Xdo">
+            <objects>
+                <navigationController id="1K0-Fc-rul" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Need Help ?" image="heart.fill" catalog="system" id="3Uu-k6-r3o">
+                        <color key="badgeColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </tabBarItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="FU6-uq-APx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wyf-rV-OBB" kind="relationship" relationship="rootViewController" id="qMi-xz-JVh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OR8-mi-eVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-949" y="-269"/>
+        </scene>
+        <!--Need help ?-->
+        <scene sceneID="B9z-gr-RWU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSJ-AJ-P9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="NeedHelpViewController" id="wyf-rV-OBB" customClass="NeedHelpViewController" customModule="Push_Notification___Receiver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tXS-cx-VBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXv-b5-nif">
+                                <rect key="frame" x="70" y="242.5" width="274" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No problem !!! Connect with me" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-GY-MWa">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="paH-X3-0cj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv4-Fl-zLa">
+                                        <rect key="frame" x="17" y="69" width="240" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="XBK-8W-HZI"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="zYn-LV-dBD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Connect via mail"/>
+                                        <connections>
+                                            <action selector="sendEmailTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="DIp-na-kQ0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40p-9B-4tl">
+                                        <rect key="frame" x="17" y="157" width="240" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="78D-5Z-gUv"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="PPI-68-Vka"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Connect via SMS"/>
+                                        <connections>
+                                            <action selector="sendSMSTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="nDy-eH-csd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="40p-9B-4tl" firstAttribute="top" secondItem="Uv4-Fl-zLa" secondAttribute="bottom" constant="44" id="2gM-DT-tkt"/>
+                                    <constraint firstItem="kCk-GY-MWa" firstAttribute="top" secondItem="BXv-b5-nif" secondAttribute="top" id="HJv-UI-92c"/>
+                                    <constraint firstItem="Uv4-Fl-zLa" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="Ig6-ZT-n8i"/>
+                                    <constraint firstItem="Uv4-Fl-zLa" firstAttribute="top" secondItem="kCk-GY-MWa" secondAttribute="bottom" constant="5" id="Ili-J7-epU"/>
+                                    <constraint firstAttribute="height" constant="240" id="PW8-Hh-PtF"/>
+                                    <constraint firstAttribute="trailing" secondItem="kCk-GY-MWa" secondAttribute="trailing" id="VFP-Bc-1hb"/>
+                                    <constraint firstItem="kCk-GY-MWa" firstAttribute="leading" secondItem="BXv-b5-nif" secondAttribute="leading" id="djM-hP-af8"/>
+                                    <constraint firstItem="40p-9B-4tl" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="zeL-oX-svD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BXv-b5-nif" firstAttribute="centerY" secondItem="tXS-cx-VBQ" secondAttribute="centerY" id="E4H-JC-nJU"/>
+                            <constraint firstItem="BXv-b5-nif" firstAttribute="centerX" secondItem="tXS-cx-VBQ" secondAttribute="centerX" id="Gck-qw-mag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vvj-oZ-Kub"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Need help ?" id="Nfs-16-pij"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-68" y="-269"/>
         </scene>
     </scenes>
-    <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
-        <image name="text.insert" catalog="system" width="128" height="100"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
     </resources>
 </document>

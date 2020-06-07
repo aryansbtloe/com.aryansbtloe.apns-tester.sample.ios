@@ -15,6 +15,7 @@
 		191EE775248D830A004261E2 /* 4.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 191EE773248D830A004261E2 /* 4.rtf */; };
 		191EE778248D8492004261E2 /* 5.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 191EE776248D8492004261E2 /* 5.rtf */; };
 		191EE779248D8492004261E2 /* 6.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 191EE777248D8492004261E2 /* 6.rtf */; };
+		191EE77C248D8C1B004261E2 /* NeedHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191EE77B248D8C1B004261E2 /* NeedHelpViewController.swift */; };
 		19697E54248839CE006DF21A /* AksCommonExtensions + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E2C248839CE006DF21A /* AksCommonExtensions + UIImageView.swift */; };
 		19697E55248839CE006DF21A /* AksCommonExtensions + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E2D248839CE006DF21A /* AksCommonExtensions + UIViewController.swift */; };
 		19697E56248839CE006DF21A /* AksCommonExtensions + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19697E2E248839CE006DF21A /* AksCommonExtensions + String.swift */; };
@@ -73,6 +74,7 @@
 		191EE773248D830A004261E2 /* 4.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = 4.rtf; sourceTree = "<group>"; };
 		191EE776248D8492004261E2 /* 5.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = 5.rtf; sourceTree = "<group>"; };
 		191EE777248D8492004261E2 /* 6.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = 6.rtf; sourceTree = "<group>"; };
+		191EE77B248D8C1B004261E2 /* NeedHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedHelpViewController.swift; sourceTree = "<group>"; };
 		19697E2C248839CE006DF21A /* AksCommonExtensions + UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UIImageView.swift"; sourceTree = "<group>"; };
 		19697E2D248839CE006DF21A /* AksCommonExtensions + UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + UIViewController.swift"; sourceTree = "<group>"; };
 		19697E2E248839CE006DF21A /* AksCommonExtensions + String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AksCommonExtensions + String.swift"; sourceTree = "<group>"; };
@@ -174,6 +176,14 @@
 				191EE777248D8492004261E2 /* 6.rtf */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		191EE77A248D8C1B004261E2 /* NeedHelpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				191EE77B248D8C1B004261E2 /* NeedHelpViewController.swift */,
+			);
+			path = NeedHelpViewController;
 			sourceTree = "<group>";
 		};
 		19697E2A248839CE006DF21A /* com.aryansbtloe.core */ = {
@@ -281,6 +291,7 @@
 				191EE766248D7ECA004261E2 /* Notifications */,
 				191EE762248D7EB5004261E2 /* CodingViewController */,
 				191EE760248D7EB5004261E2 /* TextualShowCaseViewController */,
+				191EE77A248D8C1B004261E2 /* NeedHelpViewController */,
 				198786272449B79F000E7245 /* Main.storyboard */,
 				191EE767248D7FC0004261E2 /* data */,
 				1987862A2449B7A3000E7245 /* Assets.xcassets */,
@@ -486,6 +497,7 @@
 				19F5C6F92485C0A6006978FB /* HomeViewController.swift in Sources */,
 				19697E5D248839CE006DF21A /* AksCommonExtensions + Image.swift in Sources */,
 				19697E78248839CE006DF21A /* BaseViewController.swift in Sources */,
+				191EE77C248D8C1B004261E2 /* NeedHelpViewController.swift in Sources */,
 				19697E6F248839CE006DF21A /* AksCommonFunctions + Animations.swift in Sources */,
 				19697E73248839CE006DF21A /* AksCommonFunctions + Validations.swift in Sources */,
 				19697E6C248839CE006DF21A /* AksCommonFunctions.swift in Sources */,
@@ -640,7 +652,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -666,7 +678,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification Test Client.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

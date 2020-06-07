@@ -39,6 +39,7 @@ class TextualShowCaseViewController : BaseViewController {
     /// <#Description#>
     internal func setupForNavigationBar(){
         self.navigationController?.title = viewModel["title"]
+        self.navigationItem.backBarButtonItem?.tintColor = .white
     }
     
     /// <#Description#>
