@@ -1,0 +1,247 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 GillSans;\f1\fnil\fcharset0 HelveticaNeue-Bold;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 Consolas;\f4\fnil\fcharset0 HelveticaNeue-Italic;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;\red27\green31\blue34;\red255\green255\blue255;
+\red10\green77\blue204;\red21\green23\blue26;\red244\green246\blue249;\red218\green221\blue226;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c93333;\cssrgb\c14118\c16078\c18039;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c1176\c40000\c83922;\cssrgb\c10588\c12157\c13725\c5098;\cssrgb\c96471\c97255\c98039;\cssrgb\c88235\c89412\c90980;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs128 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 \
+PushServer\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \cf3 \cb4 \ulnone \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\b0\fs32 \cf3 A nodejs server that runs on heroku for sending Apple APNS push notifications.\
+Uses mongodb to store device token information and subscribed channel lists.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Provides API to update device tokens for the sandbox and production environments.\cb1 \
+\ls1\ilvl0\cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Provides API to subscribe/unsubscribe devices to/from channels\cb1 \
+\ls1\ilvl0\cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Provices web interface to send push notifications to channels (using Github auth for admin login)\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\b\fs36 \cf5 \
+\pard\pardeftab720\sl440\sa320\partightenfactor0
+\cf3 \cb4 APNS Push Certificates\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\b0\fs32 \cf3 Setup your app for Remote Push Notifications using\'a0{\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html"}}{\fldrslt \cf5 the docs}}\'a0and download the Remote Push Notifications certificate\'a0
+\f3\fs27\fsmilli13600 \cb6 .cer
+\f2\fs32 \cb4 \'a0files for Development and Production. Import them both into your keychain.\
+Open Keychain Access and export both the certificate\'a0
+\f4\i \cf3 and
+\f2\i0 \cf3 \'a0private key (highlight them both) to a\'a0
+\f3\fs27\fsmilli13600 \cb6 .p12
+\f2\fs32 \cb4 \'a0file. I recommend saving them as:\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb7 apns_dev_Certificates.p12\
+apns_prod_Certificates.p12\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 Then create the corresponding\'a0
+\f3\fs27\fsmilli13600 \cb6 .pem
+\f2\fs32 \cb4 \'a0files:\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb7 #dev\
+openssl pkcs12 -clcerts -nokeys -out apns_dev_cert.pem -in apns_dev_Certificates.p12\
+openssl pkcs12 -nocerts -out apns_dev_key.pem -in apns_dev_Certificates.p12\
+\
+#prod\
+openssl pkcs12 -clcerts -nokeys -out apns_prod_cert.pem -in apns_prod_Certificates.p12 \
+openssl pkcs12 -nocerts -out apns_prod_key.pem -in apns_prod_Certificates.p12\
+\
+# optional to remove passphrase from keys\
+openssl rsa -in apns_dev_key.pem -out apns_dev_key.unencrypted.pem\
+openssl rsa -in apns_prod_key.pem -out apns_prod_key.unencrypted.pem\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 Copy the\'a0
+\f3\fs27\fsmilli13600 \cb6 *.pem
+\f2\fs32 \cb4 \'a0files into the\'a0
+\f3\fs27\fsmilli13600 \cb6 certs
+\f2\fs32 \cb4 \'a0folder of this repo.\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\b\fs36 \cf5 \cb1 \
+\pard\pardeftab720\sl440\sa320\partightenfactor0
+\cf3 \cb4 Setup\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\b0\fs32 \cf3 Create two\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/settings/applications"}}{\fldrslt \cf5 github apps}}, one for local development and one for production (you need two because the callback URL must be pre-registered and match the callback URL specified during the login flow). These apps are just used to authenticate the admin for the push dashboard and prevent anyone else from sending notifications from your server.\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb7 npm install -d\
+heroku apps:create <app_name_here>\
+heroku addons:add mongolab # free 240mg mongo tier\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\b\fs36 \cf5 \cb1 \
+\pard\pardeftab720\sl440\sa320\partightenfactor0
+\cf3 \cb4 Configure\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\b0\fs32 \cf3 See config.js for the environment variables you need to set for running the server.\'a0
+\f3\fs27\fsmilli13600 \cb6 MONGOLAB_URI
+\f2\fs32 \cb4 \'a0will be provided in your heroku environment if you ran the above heroku addons command.\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f1\b\fs30 \cf5 \cb1 \
+\pard\pardeftab720\sl360\sa320\partightenfactor0
+\cf3 \cb4 Locally\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\b0\fs27\fsmilli13600 \cf3 \cb7 export SITENAME="My push server"\
+export SITEURL=http://localhost:5000\
+export ADMIN_USERID=<your github userid>\
+export GH_CONSUMER_KEY=<your github app Client ID>\
+export GH_CONSUMER_SECRET=<your github app Client Secret>\
+export GH_CALLBACK=http://localhost:5000/oauth/callback\
+export EXPRESS_SESSION_SECRET=<random string>\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 Run\'a0
+\f3\fs27\fsmilli13600 \cb6 mongod
+\f2\fs32 \cb4 \'a0in a terminal\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb7 cd /path/to/mongodb/bin\
+./mongod\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 Run PushServer using\'a0
+\f3\fs27\fsmilli13600 \cb6 foreman
+\f2\fs32 \cb4 \'a0(should start on port 5000)\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb7 foreman start\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f1\b\fs30 \cf5 \cb1 \
+\pard\pardeftab720\sl360\sa320\partightenfactor0
+\cf3 \cb4 Heroku\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\b0\fs32 \cf3 Create a\'a0
+\f3\fs27\fsmilli13600 \cb6 production
+\f2\fs32 \cb4 \'a0branch of this repo\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb7 git branch production\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 Remove\'a0
+\f3\fs27\fsmilli13600 \cb6 *.pem
+\f2\fs32 \cb4 \'a0from\'a0
+\f3\fs27\fsmilli13600 \cb6 .gitignore
+\f2\fs32 \cb4 \'a0and add your\'a0
+\f3\fs27\fsmilli13600 \cb6 certs/*.pem
+\f2\fs32 \cb4 \'a0files to the branch - this way your certificates will be deployed to heroku.\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb7 heroku config:set GH_CONSUMER_KEY=<your github app Client ID> \\\
+GH_CONSUMER_SECRET=<your github app Client Secret> \\\
+GH_CALLBACK=http://yourdomain.example.com/oauth/callback \\\
+ADMIN_USERID=<your github userid> \\\
+EXPRESS_SESSION_SECRET=<random string> \\\
+SITENAME="My push server" \\\
+SITURL=http://yourdomain.example.com\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 Push to heroku to deploy\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb7 git push heroku production:master\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\b\fs36 \cf5 \cb1 \
+\pard\pardeftab720\sl440\sa320\partightenfactor0
+\cf3 \cb4 Warning\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 NEVER
+\f2\b0 \cf3 \'a0commit your cert/pem files and push them to a public repo. Make sure to work in a private local branch using your certs/keys when you push to heroku.\
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f1\b\fs48 \cf5 \cb1 \
+\pard\pardeftab720\sl600\sa320\partightenfactor0
+\cf3 \cb4 API\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3\b0\fs27\fsmilli13600 \cf3 \cb6 POST /dev/updateDeviceToken
+\f2\fs32 \cb4 \
+Create or update a device token entry in the database, optionally (un)subscribing it to some channels. The device token is marked in the database as a sandbox/development environment token.\
+Parameters\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+deviceToken - 64 character string of the iOS device push token (required)\cb1 \
+\ls2\ilvl0\cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+channels - comma separated string of channels to subscribe to (optional)\cb1 \
+\ls2\ilvl0\cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+unsubscribe - string "true" if the channels should be unsubscribed instead (optional)\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+\cf3 \cb4 Returns 200 status code on success.\
+\pard\pardeftab720\sa480\partightenfactor0
+\cf3 \cb8 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb6 POST /prod/updateDeviceToken
+\f2\fs32 \cb4 \
+Create or update a device token entry in the database, optionally (un)subscribing it to some channels. The device token is marked in the database as a production environment token.\
+Parameters\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+deviceToken - 64 character string of the iOS device push token (required)\cb1 \
+\ls3\ilvl0\cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+channels - comma separated string of channels to subscribe to (optional)\cb1 \
+\ls3\ilvl0\cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+unsubscribe - string "true" if the channels should be unsubscribed instead (optional)\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+\cf3 \cb4 Returns 200 status code on success.\
+\pard\pardeftab720\sa480\partightenfactor0
+\cf3 \cb8 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3\fs27\fsmilli13600 \cf3 \cb6 GET /channel_list/:device_token
+\f2\fs32 \cb4 \
+Parameters\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+:device_token - 64 character string of the iOS device push token (required)\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+\cf3 \cb4 Returns 200 status plain text comma separated list of channels the passed-in device token is currently subscribed to.\
+Returns 404 status if device token is not found.\
+Returns 500 status on other error.\
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f1\b\fs48 \cf5 \cb1 \
+\pard\pardeftab720\sl600\sa320\partightenfactor0
+\cf3 \cb4 Dashboard\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\b0\fs32 \cf3 Navigate to the website root, then click "login with github" in the upper right to authenticate as the admin. Once logged in, you will see the "dashboard" link in the nav bar.\
+On the dashboard page you can select the Dev or Prod environment, the channel to send a notification to, the badge number (use 0 to clear the badge), and the message to send in the notification payload.\
+Hit the "Submit" button, and if all goes well, you will see a "Success" message on the next page and a push notification arrive on your device! Errors are logged to the server console.\
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f1\b\fs48 \cf5 \cb1 \
+\pard\pardeftab720\sl600\sa320\partightenfactor0
+\cf3 \cb4 LICENSE\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\b0\fs32 \cf3 MIT License - See LICENSE file for more information\
+}

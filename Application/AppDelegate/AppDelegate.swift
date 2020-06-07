@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Utility.setupApp()
+        UNUserNotificationCenter.current().delegate = UIApplication.shared.delegate as? AppDelegate
         return true
     }
 
@@ -49,5 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
         print("Failed to register for remote notifications with error: \(error)")
     }
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+         completionHandler([.alert, .sound])
+     }
+    
 }
 
+ 
