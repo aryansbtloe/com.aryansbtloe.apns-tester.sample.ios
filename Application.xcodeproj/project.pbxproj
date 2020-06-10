@@ -115,7 +115,7 @@
 		19697E53248839CE006DF21A /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		19697E7B24883A23006DF21A /* Utility + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Utility + Extension.swift"; sourceTree = "<group>"; };
 		19697E7C24883A23006DF21A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		1987861E2449B79F000E7245 /* Push Notification : Receiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Notification : Receiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1987861E2449B79F000E7245 /* Push Notification - Receiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Notification - Receiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		198786212449B79F000E7245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198786282449B79F000E7245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1987862A2449B7A3000E7245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -277,7 +277,7 @@
 		1987861F2449B79F000E7245 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1987861E2449B79F000E7245 /* Push Notification : Receiver.app */,
+				1987861E2449B79F000E7245 /* Push Notification - Receiver.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 			);
 			name = Application;
 			productName = Bible;
-			productReference = 1987861E2449B79F000E7245 /* Push Notification : Receiver.app */;
+			productReference = 1987861E2449B79F000E7245 /* Push Notification - Receiver.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -652,7 +652,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -661,7 +661,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aryansbtloe.apns-tester.sample.ios";
-				PRODUCT_NAME = "Push Notification : Receiver";
+				PRODUCT_NAME = "Push Notification - Receiver";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
@@ -678,7 +678,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification Test Client.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -687,7 +687,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aryansbtloe.apns-tester.sample.ios";
-				PRODUCT_NAME = "Push Notification : Receiver";
+				PRODUCT_NAME = "Push Notification - Receiver";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
