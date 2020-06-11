@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1987861D2449B79F000E7245"
-               BuildableName = "Push Notification - Receiver.app"
+               BuildableName = "Push Notification - Client.app"
                BlueprintName = "Application"
                ReferencedContainer = "container:Application.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1987861D2449B79F000E7245"
-            BuildableName = "Push Notification - Receiver.app"
+            BuildableName = "Push Notification - Client.app"
             BlueprintName = "Application"
             ReferencedContainer = "container:Application.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1987861D2449B79F000E7245"
-            BuildableName = "Push Notification - Receiver.app"
+            BuildableName = "Push Notification - Client.app"
             BlueprintName = "Application"
             ReferencedContainer = "container:Application.xcodeproj">
          </BuildableReference>

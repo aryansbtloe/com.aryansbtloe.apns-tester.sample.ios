@@ -55,6 +55,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
          completionHandler([.alert, .sound])
      }
     
+    override func buildMenu(with builder: UIMenuBuilder) {
+        super.buildMenu(with: builder)
+        builder.remove(menu: .help)
+    }
+    
 }
 
  
