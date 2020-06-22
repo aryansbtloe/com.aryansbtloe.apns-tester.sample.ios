@@ -55,10 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
          completionHandler([.alert, .sound])
      }
     
+    #if targetEnvironment(macCatalyst)
     override func buildMenu(with builder: UIMenuBuilder) {
         super.buildMenu(with: builder)
         builder.remove(menu: .help)
     }
+    #endif
     
 }
 
