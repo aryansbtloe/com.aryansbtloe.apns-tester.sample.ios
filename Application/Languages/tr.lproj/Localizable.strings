@@ -1,0 +1,13 @@
+"_CONNECT_VIA_SMS_" = "SMS ile bağlan";
+"_CONNECT_VIA_MAIL_" = "MAIL ile bağlan";
+"_CONNECT_WITH_ME_" = "Sorun değil !!! Bize bağlanın";
+"_NEED_HELP_" = "Yardıma mı ihtiyacınız var?";
+"_HOW_TO_SEND_" = "Anlık Bildirimler Nasıl Gönderilir?";
+"_NOTIFICATION_" = "Bildirim";
+"_CODE_" = "Kod";
+"_TEST_NOTIFICATION_" = "Test Bildirimleri";
+"_GUIDANCE_" = "Bu test cihazına push \ nnotification göndererek sunucu tarafı APNS uygulamanızı test edebilirsiniz. \ NAşağıda verilen cihaz belirteci, paket kimliği ve sertifikayı kullanın";
+"_COPY_" = "Kopyala";
+"_DOWNLOAD_" = "İndir";
+"_CAN_WE_CONNECT_" = "Hey, burada yardıma ihtiyacım var gibi görünüyor \ nBağlayabilir miyiz?";
+"_SETUP_ACCOUNT_" = "Lütfen önce posta hesabınızı ayarlayın";

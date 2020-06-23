@@ -52,10 +52,10 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
             mail.setToRecipients(["alok.singh.confident@gmail.com"])
-            mail.setMessageBody("<p>Can we connect ?</p>", isHTML: true)
+            mail.setMessageBody("<p>\(LS("_CAN_WE_CONNECT_"))</p>", isHTML: true)
             present(mail, animated: true)
         } else {
-            Utility.showAlert(view: self, title: "Error", message: "Please setup your mail account first", positiveText: "Okay", negativeText: nil, onPositive: {
+            Utility.showAlert(view: self, title: "Error", message: LS("_SETUP_ACCOUNT_"), positiveText: "Okay", negativeText: nil, onPositive: {
             }) {}
         }
     }
@@ -67,7 +67,7 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
     func sendSMS() {
         if (MFMessageComposeViewController.canSendText()) {
             let controller = MFMessageComposeViewController()
-            controller.body = "Can we connect ?"
+            controller.body = LS("_CAN_WE_CONNECT_")
             controller.recipients = ["+918287757210"]
             controller.messageComposeDelegate = self
             self.present(controller, animated: true, completion: nil)

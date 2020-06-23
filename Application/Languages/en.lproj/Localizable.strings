@@ -1,0 +1,13 @@
+"_CONNECT_VIA_SMS_" = "Connect via SMS";
+"_CONNECT_VIA_MAIL_" = "Connect via MAIL";
+"_CONNECT_WITH_ME_" = "No problem !!! Connect with us";
+"_NEED_HELP_" = "Need help ?";
+"_HOW_TO_SEND_" = "How to Send Push Notifications ?";
+"_NOTIFICATION_" = "Notification";
+"_CODE_" = "Code";
+"_TEST_NOTIFICATION_" = "Test Notifications";
+"_GUIDANCE_" = "You can test your server side APNS implementation by sending push\nnotification to this tester\napplication.\nJust use device token , bundle id and certificate provided below";
+"_COPY_" = "Copy";
+"_DOWNLOAD_" = "Download";
+"_CAN_WE_CONNECT_" = "Hey looks like i need help here\nCan we connect?";
+"_SETUP_ACCOUNT_" = "Please setup your mail account first";

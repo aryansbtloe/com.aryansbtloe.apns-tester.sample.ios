@@ -1,0 +1,13 @@
+"_CONNECT_VIA_SMS_" = "Sambung melalui SMS";
+"_CONNECT_VIA_MAIL_" = "Sambung melalui MAIL";
+"_CONNECT_WITH_ME_" = "Tiada masalah !!! Berhubung dengan kami";
+"_NEED_HELP_" = "Perlu bantuan?";
+"_HOW_TO_SEND_" = "Bagaimana Menghantar Pemberitahuan Tolak?";
+"_NOTIFICATION_" = "Pemberitahuan";
+"_CODE_" = "Kod";
+"_TEST_NOTIFICATION_" = "Pemberitahuan Uji";
+"_GUIDANCE_" = "Anda dapat menguji pelaksanaan APNS sisi pelayan anda dengan mengirimkan push \ npemberitahuan ke penguji ini \ naplikasi. \ NHanya gunakan token peranti, id bundle dan sijil yang disediakan di bawah";
+"_COPY_" = "Salin";
+"_DOWNLOAD_" = "Muat turun";
+"_CAN_WE_CONNECT_" = "Hei sepertinya saya memerlukan bantuan di sini \ nBolehkah kita berhubung?";
+"_SETUP_ACCOUNT_" = "Sila sediakan akaun e-mel anda terlebih dahulu";

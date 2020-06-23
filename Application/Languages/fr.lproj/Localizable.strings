@@ -1,0 +1,13 @@
+"_CONNECT_VIA_SMS_" = "Se connecter via SMS";
+"_CONNECT_VIA_MAIL_" = "Se connecter via MAIL";
+"_CONNECT_WITH_ME_" = "Pas de problème !!! Connectez-vous avec nous";
+"_NEED_HELP_" = "Besoin d'aide?";
+"_HOW_TO_SEND_" = "Comment envoyer des notifications push?";
+"_NOTIFICATION_" = "Notification";
+"_CODE_" = "Code";
+"_TEST_NOTIFICATION_" = "Notifications de test";
+"_GUIDANCE_" = "Vous pouvez tester votre implémentation APNS côté serveur en envoyant une \ nnotification push à ce testeur \ napplication. \ NUtilisez simplement le jeton d'appareil, l'identifiant du bundle et le certificat fournis ci-dessous";
+"_COPY_" = "Copier";
+"_DOWNLOAD_" = "Télécharger";
+"_CAN_WE_CONNECT_" = "Hé, on dirait que j'ai besoin d'aide ici \ nPeut-on se connecter?";
+"_SETUP_ACCOUNT_" = "Veuillez d'abord configurer votre compte de messagerie";

@@ -1,0 +1,13 @@
+"_CONNECT_VIA_SMS_" = "Conectar via SMS";
+"_CONNECT_VIA_MAIL_" = "Conectar via MAIL";
+"_CONNECT_WITH_ME_" = "Sem problemas !!! Conecte-se conosco";
+"_NEED_HELP_" = "Precisa de ajuda?";
+"_HOW_TO_SEND_" = "Como enviar notificações push?";
+"_NOTIFICATION_" = "Notificação";
+"_CODE_" = "Código";
+"_TEST_NOTIFICATION_" = "Testar notificações";
+"_GUIDANCE_" = "Você pode testar a implementação do APNS no servidor enviando \ \ notificação a este testador \ napplication. \ NSó use o token do dispositivo, o ID do pacote e o certificado fornecidos abaixo";
+"_COPY_" = "Copiar";
+"_DOWNLOAD_" = "Download";
+"_CAN_WE_CONNECT_" = "Ei, parece que preciso de ajuda aqui \ nPodemos nos conectar?";
+"_SETUP_ACCOUNT_" = "Por favor, configure sua conta de e-mail primeiro";

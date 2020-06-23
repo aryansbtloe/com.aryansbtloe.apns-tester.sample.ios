@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Test Notifications-->
+        <!--Home View Controller-->
         <scene sceneID="8oo-XZ-hw3">
             <objects>
-                <viewController id="hhQ-UZ-iE4" customClass="HomeViewController" customModule="Push_Notification___Receiver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hhQ-UZ-iE4" customClass="HomeViewController" customModule="Push_Notification___Client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ete-3W-ziR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,9 @@
                                             <constraint firstAttribute="width" constant="88" id="PeY-F4-8xe"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="COPY"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_COPY_"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="fetchAndCopyDeviceToken" destination="hhQ-UZ-iE4" eventType="touchUpInside" id="6hm-7i-OkV"/>
                                         </connections>
@@ -149,7 +151,9 @@
                                             <constraint firstAttribute="height" constant="34" id="bgn-29-zdp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="COPY"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_COPY_"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="copyBundleIdentifier" destination="hhQ-UZ-iE4" eventType="touchUpInside" id="Ahi-oT-nPa"/>
                                         </connections>
@@ -214,7 +218,9 @@
                                             <constraint firstAttribute="height" constant="34" id="7KN-9z-Kjs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="DOWNLOAD"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_DOWNLOAD_"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="downloadCertificate" destination="hhQ-UZ-iE4" eventType="touchUpInside" id="tUB-4d-0fY"/>
                                         </connections>
@@ -240,12 +246,14 @@
                                     <constraint firstItem="o4i-dx-xu7" firstAttribute="top" secondItem="aZP-he-Ehg" secondAttribute="bottom" constant="10" id="yhT-dH-Zl3"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtG-9Q-W9V">
-                                <rect key="frame" x="10" y="105" width="394" height="79.5"/>
-                                <string key="text">You can test your server side APNS implementation by sending push notification to this tester application. Just use device token , bundle id and certificate provided below</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtG-9Q-W9V">
+                                <rect key="frame" x="10" y="184.5" width="394" height="0.0"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_GUIDANCE_"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -259,7 +267,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mha-oS-4YX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Test Notifications" id="Qsj-hH-Hub"/>
+                    <navigationItem key="navigationItem" id="Qsj-hH-Hub">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_TEST_NOTIFICATION_"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="deviceTokenLabel" destination="Icp-Mk-T3d" id="eKJ-Dg-Q8B"/>
                     </connections>
@@ -290,11 +302,15 @@
             </objects>
             <point key="canvasLocation" x="-2381" y="-1008"/>
         </scene>
-        <!--Notification-->
+        <!--Navigation Controller-->
         <scene sceneID="iB4-zb-p8x">
             <objects>
                 <navigationController id="e8z-KV-2mh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notification" image="bell.fill" catalog="system" id="InL-9J-jyC"/>
+                    <tabBarItem key="tabBarItem" title="" image="bell.fill" catalog="system" id="InL-9J-jyC">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_NOTIFICATION_"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="lyB-yB-dGl">
@@ -309,11 +325,15 @@
             </objects>
             <point key="canvasLocation" x="-949" y="-1759"/>
         </scene>
-        <!--Code-->
+        <!--Navigation Controller-->
         <scene sceneID="GA4-Kk-Dgi">
             <objects>
                 <navigationController id="ZZm-Nd-aH0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Code" image="doc.text" catalog="system" id="LCA-xl-OnQ"/>
+                    <tabBarItem key="tabBarItem" title="" image="doc.text" catalog="system" id="LCA-xl-OnQ">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_CODE_"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="q11-YW-nYB">
@@ -328,10 +348,10 @@
             </objects>
             <point key="canvasLocation" x="-949" y="-1008"/>
         </scene>
-        <!--How to Send Push Notifications ?-->
+        <!--Coding View Controller-->
         <scene sceneID="ukx-Vt-rwg">
             <objects>
-                <viewController id="rhi-79-wEQ" customClass="CodingViewController" customModule="Push_Notification___Receiver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rhi-79-wEQ" customClass="CodingViewController" customModule="Push_Notification___Client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uao-45-4rA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,7 +374,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hb8-X5-hlh"/>
                     </view>
-                    <navigationItem key="navigationItem" title="How to Send Push Notifications ?" id="ziX-MJ-uWC"/>
+                    <navigationItem key="navigationItem" id="ziX-MJ-uWC">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_HOW_TO_SEND_"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="O0g-wb-FJX" id="qp2-81-01l"/>
                     </connections>
@@ -366,7 +390,7 @@
         <!--Textual Show Case View Controller-->
         <scene sceneID="E54-nf-86a">
             <objects>
-                <viewController storyboardIdentifier="TextualShowCaseViewController" id="xG7-BY-mUp" customClass="TextualShowCaseViewController" customModule="Push_Notification___Receiver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TextualShowCaseViewController" id="xG7-BY-mUp" customClass="TextualShowCaseViewController" customModule="Push_Notification___Client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QOd-Rr-4Se">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,12 +422,15 @@
             </objects>
             <point key="canvasLocation" x="771" y="-1008"/>
         </scene>
-        <!--Need Help ?-->
+        <!--Navigation Controller-->
         <scene sceneID="1fH-Tv-Xdo">
             <objects>
                 <navigationController id="1K0-Fc-rul" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Need Help ?" image="heart.fill" catalog="system" id="3Uu-k6-r3o">
+                    <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="3Uu-k6-r3o">
                         <color key="badgeColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_NEED_HELP_"/>
+                        </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
@@ -419,49 +446,55 @@
             </objects>
             <point key="canvasLocation" x="-949" y="-269"/>
         </scene>
-        <!--Need help ?-->
+        <!--Need Help View Controller-->
         <scene sceneID="B9z-gr-RWU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CSJ-AJ-P9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="NeedHelpViewController" id="wyf-rV-OBB" customClass="NeedHelpViewController" customModule="Push_Notification___Receiver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NeedHelpViewController" id="wyf-rV-OBB" customClass="NeedHelpViewController" customModule="Push_Notification___Client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tXS-cx-VBQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXv-b5-nif">
-                                <rect key="frame" x="70" y="242.5" width="274" height="240"/>
+                                <rect key="frame" x="207" y="242.5" width="0.0" height="240"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No problem !!! Connect with me" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-GY-MWa">
-                                        <rect key="frame" x="0.0" y="0.0" width="274" height="64"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-GY-MWa">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="paH-X3-0cj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_CONNECT_WITH_ME_"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv4-Fl-zLa">
-                                        <rect key="frame" x="17" y="69" width="240" height="44"/>
+                                        <rect key="frame" x="-120" y="69" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="XBK-8W-HZI"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="zYn-LV-dBD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="Connect via mail"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_CONNECT_VIA_MAIL_"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sendEmailTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="DIp-na-kQ0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40p-9B-4tl">
-                                        <rect key="frame" x="17" y="157" width="240" height="44"/>
+                                        <rect key="frame" x="-120" y="157" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="78D-5Z-gUv"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="PPI-68-Vka"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="Connect via SMS"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_CONNECT_VIA_SMS_"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sendSMSTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="nDy-eH-csd"/>
                                         </connections>
@@ -487,10 +520,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vvj-oZ-Kub"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Need help ?" id="Nfs-16-pij"/>
+                    <navigationItem key="navigationItem" id="Nfs-16-pij">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_NEED_HELP_"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSJ-AJ-P9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-68" y="-269"/>
         </scene>

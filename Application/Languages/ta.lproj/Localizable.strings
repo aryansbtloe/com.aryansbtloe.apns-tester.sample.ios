@@ -1,0 +1,13 @@
+"_CONNECT_VIA_SMS_" = "எஸ்எம்எஸ் வழியாக இணைக்கவும்";
+"_CONNECT_VIA_MAIL_" = "MAIL வழியாக இணைக்கவும்";
+"_CONNECT_WITH_ME_" = "எந்த பிரச்சனையும் இல்லை !!! எங்களுடன் இணைக்கவும்";
+"_NEED_HELP_" = "உதவி தேவையா?";
+"_HOW_TO_SEND_" = "புஷ் அறிவிப்புகளை எவ்வாறு அனுப்புவது?";
+"_NOTIFICATION_" = "அறிவிப்பு";
+"_CODE_" = "குறியீடு";
+"_TEST_NOTIFICATION_" = "சோதனை அறிவிப்புகள்";
+"_GUIDANCE_" = "You can test your server side APNS implementation by sending push\nnotification to this tester\napplication.\nJust use device token , bundle id and certificate provided below";
+"_COPY_" = "நகலெடு";
+"_DOWNLOAD_" = "பதிவிறக்கு";
+"_CAN_WE_CONNECT_" = "ஏய் எனக்கு இங்கே உதவி தேவைப்படுவது போல் தெரிகிறது we n நாம் இணைக்க முடியுமா?";
+"_SETUP_ACCOUNT_" = "தயவுசெய்து உங்கள் அஞ்சல் கணக்கை முதலில் அமைக்கவும்";
