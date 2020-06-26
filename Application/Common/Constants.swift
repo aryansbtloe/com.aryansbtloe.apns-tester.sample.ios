@@ -8,4 +8,5 @@
 
 import Foundation
 
-let kAdUnitId = "ca-app-pub-7178447751314817/8941449898"
+let kAdUnitIdInterstitial = "ca-app-pub-7178447751314817/8941449898"
+let kAdUnitIdBanner = "ca-app-pub-7178447751314817/1767532843"

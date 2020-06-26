@@ -16,7 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
     public var deviceToken: String?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let viewController = mainStoryboard()
+            .instantiateViewController(withIdentifier: "initialView")
+        #if !targetEnvironment(macCatalyst)
+        let rootViewController = AdViewController(
+            contentController: viewController,
+            bannerAdUnitId: kAdUnitIdBanner,
+            interstantialAdUnitId: kAdUnitIdInterstitial,
+            isBannerBottom: false,
+            debug: true)
+        window?.rootViewController = rootViewController
+        #else
+        window?.rootViewController = viewController
+        #endif
         Utility.setupApp()
         Utility.setupCommonAppearance()
         UNUserNotificationCenter.current().delegate = UIApplication.shared.delegate as? AppDelegate

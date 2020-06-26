@@ -64,6 +64,7 @@
 		19F5C6F92485C0A6006978FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5C6F82485C0A6006978FB /* HomeViewController.swift */; };
 		379C4622E93DC4ACF0275B14 /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D15C00B75CFF81B5434EA4 /* Pods_Application.framework */; };
 		4C7B6BA324A2733A00F9350C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B6BA124A2733A00F9350C /* Localizable.strings */; };
+		4CE988B224A5EF1300C6C65E /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988B124A5EF1300C6C65E /* AdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,7 @@
 		4C22CE8324A2767E008E1100 /* zh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = zh; path = Languages/zh.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C7B6BA224A2733A00F9350C /* ar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ar; path = Languages/ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C7B6BA424A2734D00F9350C /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = Languages/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CE988B124A5EF1300C6C65E /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		85D15C00B75CFF81B5434EA4 /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE4E96D1F116A37713ACBDE /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
 		CE4A93622FCF62E1982CBF2B /* Pods-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.release.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.release.xcconfig"; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		19697E51248839CE006DF21A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				4CE988B124A5EF1300C6C65E /* AdViewController.swift */,
 				19697E52248839CE006DF21A /* BaseViewController.swift */,
 				19697E53248839CE006DF21A /* Utility.swift */,
 			);
@@ -520,6 +523,7 @@
 				19697E57248839CE006DF21A /* AksCommonExtensions + Debug.swift in Sources */,
 				19697E66248839CE006DF21A /* AksCommonFunctions + Application.swift in Sources */,
 				19697E58248839CE006DF21A /* AksCommonExtensions + UIButton.swift in Sources */,
+				4CE988B224A5EF1300C6C65E /* AdViewController.swift in Sources */,
 				19697E74248839CE006DF21A /* AksCommonFunctions + User Defaults.swift in Sources */,
 				19697E5E248839CE006DF21A /* AksCommonExtensions + Date.swift in Sources */,
 				19697E70248839CE006DF21A /* AksCommonFunctions + Localizations.swift in Sources */,
