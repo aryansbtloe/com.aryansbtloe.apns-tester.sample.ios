@@ -11,7 +11,7 @@ import MessageUI
 /// <#Description#>
 class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerDelegate , MFMessageComposeViewControllerDelegate {
     
-    @IBOutlet private weak var removeAdsButton:InAppPurchaseButton!
+    @IBOutlet private weak var removeAdsButton:UIButton!
     
     /// <#Description#>
     override internal func viewDidLoad() {
@@ -24,15 +24,16 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        removeAdsButton.buttonState = .regular(animate: false, intermediateState: .inactive)
         if Utility.adPurchaseAvailable() , let removeAdsProduct = removeAdsProduct , Utility.adRemoveExperiencePurchased() == false {
             let title = "\(removeAdsProduct.localizedDescription) for \(removeAdsProduct.localizedPrice ?? "")"
             removeAdsButton.setTitle(title, for: .normal)
-            removeAdsButton.buttonState = .regular(animate: false, intermediateState: .active)
-            removeAdsButton.isHidden = Utility.adPurchaseAvailable() == false
+            removeAdsButton.isHidden = false
         }else if Utility.adRemoveExperiencePurchased() {
             removeAdsButton.setTitle(LS("ENJOY_AD_FREE_EXPERIENCE"), for: .normal)
-            removeAdsButton.buttonState = .regular(animate: false, intermediateState: .inactive)
+            removeAdsButton.isEnabled = false
+            removeAdsButton.isHidden = false
+        }else{
+            removeAdsButton.isHidden = true
         }
     }
     /// <#Description#>

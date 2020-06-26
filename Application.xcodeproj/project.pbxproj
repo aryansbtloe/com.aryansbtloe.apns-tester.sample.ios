@@ -80,12 +80,6 @@
 		4CE988E624A644C700C6C65E /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D724A644C700C6C65E /* InAppReceiptVerificator.swift */; };
 		4CE988E724A644C700C6C65E /* SKProductDiscount+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D824A644C700C6C65E /* SKProductDiscount+LocalizedPrice.swift */; };
 		4CE988E824A644C700C6C65E /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D924A644C700C6C65E /* AppleReceiptValidator.swift */; };
-		4CE988FE24A687FD00C6C65E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988F824A687FD00C6C65E /* UIView+Extensions.swift */; };
-		4CE988FF24A687FD00C6C65E /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988F924A687FD00C6C65E /* PassthroughView.swift */; };
-		4CE9890024A687FD00C6C65E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988FA24A687FD00C6C65E /* ProgressView.swift */; };
-		4CE9890124A687FD00C6C65E /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988FB24A687FD00C6C65E /* NSAttributedString+Extensions.swift */; };
-		4CE9890224A687FD00C6C65E /* DefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988FC24A687FD00C6C65E /* DefaultSettings.swift */; };
-		4CE9890324A687FD00C6C65E /* InAppPurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988FD24A687FD00C6C65E /* InAppPurchaseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,12 +174,6 @@
 		4CE988D724A644C700C6C65E /* InAppReceiptVerificator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptVerificator.swift; sourceTree = "<group>"; };
 		4CE988D824A644C700C6C65E /* SKProductDiscount+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProductDiscount+LocalizedPrice.swift"; sourceTree = "<group>"; };
 		4CE988D924A644C700C6C65E /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleReceiptValidator.swift; sourceTree = "<group>"; };
-		4CE988F824A687FD00C6C65E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		4CE988F924A687FD00C6C65E /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
-		4CE988FA24A687FD00C6C65E /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		4CE988FB24A687FD00C6C65E /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
-		4CE988FC24A687FD00C6C65E /* DefaultSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSettings.swift; sourceTree = "<group>"; };
-		4CE988FD24A687FD00C6C65E /* InAppPurchaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchaseButton.swift; sourceTree = "<group>"; };
 		85D15C00B75CFF81B5434EA4 /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE4E96D1F116A37713ACBDE /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
 		CE4A93622FCF62E1982CBF2B /* Pods-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.release.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.release.xcconfig"; sourceTree = "<group>"; };
@@ -396,7 +384,6 @@
 		4CE988CA24A644C700C6C65E /* InAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
-				4CE988F724A687FD00C6C65E /* PurchaseButton */,
 				4CE988CB24A644C700C6C65E /* SKProduct+LocalizedPrice.swift */,
 				4CE988CC24A644C700C6C65E /* InAppProductQueryRequest.swift */,
 				4CE988CD24A644C700C6C65E /* InAppReceiptRefreshRequest.swift */,
@@ -414,19 +401,6 @@
 				4CE988D924A644C700C6C65E /* AppleReceiptValidator.swift */,
 			);
 			path = InAppPurchase;
-			sourceTree = "<group>";
-		};
-		4CE988F724A687FD00C6C65E /* PurchaseButton */ = {
-			isa = PBXGroup;
-			children = (
-				4CE988F824A687FD00C6C65E /* UIView+Extensions.swift */,
-				4CE988F924A687FD00C6C65E /* PassthroughView.swift */,
-				4CE988FA24A687FD00C6C65E /* ProgressView.swift */,
-				4CE988FB24A687FD00C6C65E /* NSAttributedString+Extensions.swift */,
-				4CE988FC24A687FD00C6C65E /* DefaultSettings.swift */,
-				4CE988FD24A687FD00C6C65E /* InAppPurchaseButton.swift */,
-			);
-			path = PurchaseButton;
 			sourceTree = "<group>";
 		};
 		6B178337264ACF4B1032EC56 /* Pods */ = {
@@ -597,19 +571,14 @@
 				19697E6D248839CE006DF21A /* AksCommonFunctions + File Operations.swift in Sources */,
 				19697E54248839CE006DF21A /* AksCommonExtensions + UIImageView.swift in Sources */,
 				4CE988E124A644C700C6C65E /* CompleteTransactionsController.swift in Sources */,
-				4CE9890224A687FD00C6C65E /* DefaultSettings.swift in Sources */,
 				19697E6B248839CE006DF21A /* AksCommonFunctions + Url.swift in Sources */,
 				19697E55248839CE006DF21A /* AksCommonExtensions + UIViewController.swift in Sources */,
 				19697E60248839CE006DF21A /* AksCommonExtensions + Filemanager.swift in Sources */,
 				4CE988E024A644C700C6C65E /* ProductsInfoController.swift in Sources */,
 				4CE988E624A644C700C6C65E /* InAppReceiptVerificator.swift in Sources */,
-				4CE9890324A687FD00C6C65E /* InAppPurchaseButton.swift in Sources */,
 				19697E6A248839CE006DF21A /* AksCommonFunctions + ViewController.swift in Sources */,
 				4CE988DC24A644C700C6C65E /* InAppReceiptRefreshRequest.swift in Sources */,
 				4CE988E224A644C700C6C65E /* PaymentsController.swift in Sources */,
-				4CE9890124A687FD00C6C65E /* NSAttributedString+Extensions.swift in Sources */,
-				4CE988FE24A687FD00C6C65E /* UIView+Extensions.swift in Sources */,
-				4CE9890024A687FD00C6C65E /* ProgressView.swift in Sources */,
 				19697E71248839CE006DF21A /* AksCommonFunctions + Others.swift in Sources */,
 				19697E6E248839CE006DF21A /* AksCommonFunctions + Errors.swift in Sources */,
 				19697E63248839CE006DF21A /* AksCommonFunctions + Reachability.swift in Sources */,
@@ -627,7 +596,6 @@
 				19697E5C248839CE006DF21A /* AksCommonExtensions + TableView.swift in Sources */,
 				19697E64248839CE006DF21A /* AksCommonFunctions + String.swift in Sources */,
 				4CE988DB24A644C700C6C65E /* InAppProductQueryRequest.swift in Sources */,
-				4CE988FF24A687FD00C6C65E /* PassthroughView.swift in Sources */,
 				19697E72248839CE006DF21A /* AksCommonFunctions + Permissions.swift in Sources */,
 				19697E5B248839CE006DF21A /* AksCommonExtensions + Dictionary.swift in Sources */,
 				19697E75248839CE006DF21A /* AksCommonFunctions + Image Utils.swift in Sources */,
@@ -816,7 +784,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -843,7 +811,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification Test Client.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
