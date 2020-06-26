@@ -12,7 +12,7 @@ import MessageUI
 class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerDelegate , MFMessageComposeViewControllerDelegate {
     
     @IBOutlet private weak var removeAdsButton:UIButton!
-    
+
     /// <#Description#>
     override internal func viewDidLoad() {
         super.viewDidLoad()
@@ -62,8 +62,14 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
         sendSMS()
     }
     
-    @IBAction func onClickOfInAppPurchaseButton(){
+    @IBAction func getAdFreeExperienceTapped(){
         Utility.purchaseAdsFreeExperience { [weak self] (result) in
+            self?.removeAdsButton.isHidden = Utility.adPurchaseAvailable() == false
+        }
+    }
+    
+    @IBAction func restoreAdFreeExperiencePurchaseTapped(){
+        Utility.restorePurchasedAdsFreeExperience { [weak self] (result) in
             self?.removeAdsButton.isHidden = Utility.adPurchaseAvailable() == false
         }
     }
