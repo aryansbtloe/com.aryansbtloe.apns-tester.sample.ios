@@ -65,6 +65,27 @@
 		379C4622E93DC4ACF0275B14 /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D15C00B75CFF81B5434EA4 /* Pods_Application.framework */; };
 		4C7B6BA324A2733A00F9350C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B6BA124A2733A00F9350C /* Localizable.strings */; };
 		4CE988B224A5EF1300C6C65E /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988B124A5EF1300C6C65E /* AdViewController.swift */; };
+		4CE988DA24A644C700C6C65E /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988CB24A644C700C6C65E /* SKProduct+LocalizedPrice.swift */; };
+		4CE988DB24A644C700C6C65E /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988CC24A644C700C6C65E /* InAppProductQueryRequest.swift */; };
+		4CE988DC24A644C700C6C65E /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988CD24A644C700C6C65E /* InAppReceiptRefreshRequest.swift */; };
+		4CE988DD24A644C700C6C65E /* SwiftyStoreKit+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988CE24A644C700C6C65E /* SwiftyStoreKit+Types.swift */; };
+		4CE988DE24A644C700C6C65E /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988CF24A644C700C6C65E /* InAppReceipt.swift */; };
+		4CE988DF24A644C700C6C65E /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D024A644C700C6C65E /* SwiftyStoreKit.swift */; };
+		4CE988E024A644C700C6C65E /* ProductsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D124A644C700C6C65E /* ProductsInfoController.swift */; };
+		4CE988E124A644C700C6C65E /* CompleteTransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D224A644C700C6C65E /* CompleteTransactionsController.swift */; };
+		4CE988E224A644C700C6C65E /* PaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D324A644C700C6C65E /* PaymentsController.swift */; };
+		4CE988E324A644C700C6C65E /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D424A644C700C6C65E /* OS.swift */; };
+		4CE988E424A644C700C6C65E /* RestorePurchasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D524A644C700C6C65E /* RestorePurchasesController.swift */; };
+		4CE988E524A644C700C6C65E /* PaymentQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D624A644C700C6C65E /* PaymentQueueController.swift */; };
+		4CE988E624A644C700C6C65E /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D724A644C700C6C65E /* InAppReceiptVerificator.swift */; };
+		4CE988E724A644C700C6C65E /* SKProductDiscount+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D824A644C700C6C65E /* SKProductDiscount+LocalizedPrice.swift */; };
+		4CE988E824A644C700C6C65E /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988D924A644C700C6C65E /* AppleReceiptValidator.swift */; };
+		4CE988FE24A687FD00C6C65E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988F824A687FD00C6C65E /* UIView+Extensions.swift */; };
+		4CE988FF24A687FD00C6C65E /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988F924A687FD00C6C65E /* PassthroughView.swift */; };
+		4CE9890024A687FD00C6C65E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988FA24A687FD00C6C65E /* ProgressView.swift */; };
+		4CE9890124A687FD00C6C65E /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988FB24A687FD00C6C65E /* NSAttributedString+Extensions.swift */; };
+		4CE9890224A687FD00C6C65E /* DefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988FC24A687FD00C6C65E /* DefaultSettings.swift */; };
+		4CE9890324A687FD00C6C65E /* InAppPurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988FD24A687FD00C6C65E /* InAppPurchaseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +165,27 @@
 		4C7B6BA224A2733A00F9350C /* ar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ar; path = Languages/ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C7B6BA424A2734D00F9350C /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = Languages/de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CE988B124A5EF1300C6C65E /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		4CE988CB24A644C700C6C65E /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		4CE988CC24A644C700C6C65E /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppProductQueryRequest.swift; sourceTree = "<group>"; };
+		4CE988CD24A644C700C6C65E /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
+		4CE988CE24A644C700C6C65E /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
+		4CE988CF24A644C700C6C65E /* InAppReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceipt.swift; sourceTree = "<group>"; };
+		4CE988D024A644C700C6C65E /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyStoreKit.swift; sourceTree = "<group>"; };
+		4CE988D124A644C700C6C65E /* ProductsInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsInfoController.swift; sourceTree = "<group>"; };
+		4CE988D224A644C700C6C65E /* CompleteTransactionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTransactionsController.swift; sourceTree = "<group>"; };
+		4CE988D324A644C700C6C65E /* PaymentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsController.swift; sourceTree = "<group>"; };
+		4CE988D424A644C700C6C65E /* OS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OS.swift; sourceTree = "<group>"; };
+		4CE988D524A644C700C6C65E /* RestorePurchasesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestorePurchasesController.swift; sourceTree = "<group>"; };
+		4CE988D624A644C700C6C65E /* PaymentQueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentQueueController.swift; sourceTree = "<group>"; };
+		4CE988D724A644C700C6C65E /* InAppReceiptVerificator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptVerificator.swift; sourceTree = "<group>"; };
+		4CE988D824A644C700C6C65E /* SKProductDiscount+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProductDiscount+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		4CE988D924A644C700C6C65E /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleReceiptValidator.swift; sourceTree = "<group>"; };
+		4CE988F824A687FD00C6C65E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		4CE988F924A687FD00C6C65E /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
+		4CE988FA24A687FD00C6C65E /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		4CE988FB24A687FD00C6C65E /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		4CE988FC24A687FD00C6C65E /* DefaultSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSettings.swift; sourceTree = "<group>"; };
+		4CE988FD24A687FD00C6C65E /* InAppPurchaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchaseButton.swift; sourceTree = "<group>"; };
 		85D15C00B75CFF81B5434EA4 /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE4E96D1F116A37713ACBDE /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
 		CE4A93622FCF62E1982CBF2B /* Pods-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.release.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +312,7 @@
 		19697E51248839CE006DF21A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				4CE988CA24A644C700C6C65E /* InAppPurchase */,
 				4CE988B124A5EF1300C6C65E /* AdViewController.swift */,
 				19697E52248839CE006DF21A /* BaseViewController.swift */,
 				19697E53248839CE006DF21A /* Utility.swift */,
@@ -348,6 +391,42 @@
 				85D15C00B75CFF81B5434EA4 /* Pods_Application.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CE988CA24A644C700C6C65E /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				4CE988F724A687FD00C6C65E /* PurchaseButton */,
+				4CE988CB24A644C700C6C65E /* SKProduct+LocalizedPrice.swift */,
+				4CE988CC24A644C700C6C65E /* InAppProductQueryRequest.swift */,
+				4CE988CD24A644C700C6C65E /* InAppReceiptRefreshRequest.swift */,
+				4CE988CE24A644C700C6C65E /* SwiftyStoreKit+Types.swift */,
+				4CE988CF24A644C700C6C65E /* InAppReceipt.swift */,
+				4CE988D024A644C700C6C65E /* SwiftyStoreKit.swift */,
+				4CE988D124A644C700C6C65E /* ProductsInfoController.swift */,
+				4CE988D224A644C700C6C65E /* CompleteTransactionsController.swift */,
+				4CE988D324A644C700C6C65E /* PaymentsController.swift */,
+				4CE988D424A644C700C6C65E /* OS.swift */,
+				4CE988D524A644C700C6C65E /* RestorePurchasesController.swift */,
+				4CE988D624A644C700C6C65E /* PaymentQueueController.swift */,
+				4CE988D724A644C700C6C65E /* InAppReceiptVerificator.swift */,
+				4CE988D824A644C700C6C65E /* SKProductDiscount+LocalizedPrice.swift */,
+				4CE988D924A644C700C6C65E /* AppleReceiptValidator.swift */,
+			);
+			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		4CE988F724A687FD00C6C65E /* PurchaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				4CE988F824A687FD00C6C65E /* UIView+Extensions.swift */,
+				4CE988F924A687FD00C6C65E /* PassthroughView.swift */,
+				4CE988FA24A687FD00C6C65E /* ProgressView.swift */,
+				4CE988FB24A687FD00C6C65E /* NSAttributedString+Extensions.swift */,
+				4CE988FC24A687FD00C6C65E /* DefaultSettings.swift */,
+				4CE988FD24A687FD00C6C65E /* InAppPurchaseButton.swift */,
+			);
+			path = PurchaseButton;
 			sourceTree = "<group>";
 		};
 		6B178337264ACF4B1032EC56 /* Pods */ = {
@@ -500,23 +579,37 @@
 			files = (
 				19697E56248839CE006DF21A /* AksCommonExtensions + String.swift in Sources */,
 				19697E5A248839CE006DF21A /* AksCommonExtensions + CollectionView.swift in Sources */,
+				4CE988E824A644C700C6C65E /* AppleReceiptValidator.swift in Sources */,
 				19697E77248839CE006DF21A /* AksCommonFunctions + Debugging.swift in Sources */,
 				19697E62248839CE006DF21A /* AksCommonExtensions + Error.swift in Sources */,
 				198786222449B79F000E7245 /* AppDelegate.swift in Sources */,
 				19697E68248839CE006DF21A /* AksCommonFunctions + Fonts.swift in Sources */,
 				19697E59248839CE006DF21A /* AksCommonExtensions + UILabel.swift in Sources */,
 				19697E79248839CE006DF21A /* Utility.swift in Sources */,
+				4CE988E424A644C700C6C65E /* RestorePurchasesController.swift in Sources */,
 				19697E7D24883A24006DF21A /* Utility + Extension.swift in Sources */,
 				191EE765248D7EB5004261E2 /* CodingViewController.swift in Sources */,
 				19697E65248839CE006DF21A /* AksCommonFunctions + Date.swift in Sources */,
+				4CE988E524A644C700C6C65E /* PaymentQueueController.swift in Sources */,
 				19697E61248839CE006DF21A /* AksCommonExtensions + Others.swift in Sources */,
+				4CE988E724A644C700C6C65E /* SKProductDiscount+LocalizedPrice.swift in Sources */,
 				19697E7E24883A24006DF21A /* Constants.swift in Sources */,
 				19697E6D248839CE006DF21A /* AksCommonFunctions + File Operations.swift in Sources */,
 				19697E54248839CE006DF21A /* AksCommonExtensions + UIImageView.swift in Sources */,
+				4CE988E124A644C700C6C65E /* CompleteTransactionsController.swift in Sources */,
+				4CE9890224A687FD00C6C65E /* DefaultSettings.swift in Sources */,
 				19697E6B248839CE006DF21A /* AksCommonFunctions + Url.swift in Sources */,
 				19697E55248839CE006DF21A /* AksCommonExtensions + UIViewController.swift in Sources */,
 				19697E60248839CE006DF21A /* AksCommonExtensions + Filemanager.swift in Sources */,
+				4CE988E024A644C700C6C65E /* ProductsInfoController.swift in Sources */,
+				4CE988E624A644C700C6C65E /* InAppReceiptVerificator.swift in Sources */,
+				4CE9890324A687FD00C6C65E /* InAppPurchaseButton.swift in Sources */,
 				19697E6A248839CE006DF21A /* AksCommonFunctions + ViewController.swift in Sources */,
+				4CE988DC24A644C700C6C65E /* InAppReceiptRefreshRequest.swift in Sources */,
+				4CE988E224A644C700C6C65E /* PaymentsController.swift in Sources */,
+				4CE9890124A687FD00C6C65E /* NSAttributedString+Extensions.swift in Sources */,
+				4CE988FE24A687FD00C6C65E /* UIView+Extensions.swift in Sources */,
+				4CE9890024A687FD00C6C65E /* ProgressView.swift in Sources */,
 				19697E71248839CE006DF21A /* AksCommonFunctions + Others.swift in Sources */,
 				19697E6E248839CE006DF21A /* AksCommonFunctions + Errors.swift in Sources */,
 				19697E63248839CE006DF21A /* AksCommonFunctions + Reachability.swift in Sources */,
@@ -525,24 +618,31 @@
 				19697E58248839CE006DF21A /* AksCommonExtensions + UIButton.swift in Sources */,
 				4CE988B224A5EF1300C6C65E /* AdViewController.swift in Sources */,
 				19697E74248839CE006DF21A /* AksCommonFunctions + User Defaults.swift in Sources */,
+				4CE988DD24A644C700C6C65E /* SwiftyStoreKit+Types.swift in Sources */,
+				4CE988DE24A644C700C6C65E /* InAppReceipt.swift in Sources */,
 				19697E5E248839CE006DF21A /* AksCommonExtensions + Date.swift in Sources */,
 				19697E70248839CE006DF21A /* AksCommonFunctions + Localizations.swift in Sources */,
 				19697E69248839CE006DF21A /* AksCommonFunctions + Alerts.swift in Sources */,
 				19697E67248839CE006DF21A /* AksCommonFunctions + View.swift in Sources */,
 				19697E5C248839CE006DF21A /* AksCommonExtensions + TableView.swift in Sources */,
 				19697E64248839CE006DF21A /* AksCommonFunctions + String.swift in Sources */,
+				4CE988DB24A644C700C6C65E /* InAppProductQueryRequest.swift in Sources */,
+				4CE988FF24A687FD00C6C65E /* PassthroughView.swift in Sources */,
 				19697E72248839CE006DF21A /* AksCommonFunctions + Permissions.swift in Sources */,
 				19697E5B248839CE006DF21A /* AksCommonExtensions + Dictionary.swift in Sources */,
 				19697E75248839CE006DF21A /* AksCommonFunctions + Image Utils.swift in Sources */,
 				19F5C6F92485C0A6006978FB /* HomeViewController.swift in Sources */,
 				19697E5D248839CE006DF21A /* AksCommonExtensions + Image.swift in Sources */,
+				4CE988E324A644C700C6C65E /* OS.swift in Sources */,
 				19697E78248839CE006DF21A /* BaseViewController.swift in Sources */,
 				191EE77C248D8C1B004261E2 /* NeedHelpViewController.swift in Sources */,
+				4CE988DA24A644C700C6C65E /* SKProduct+LocalizedPrice.swift in Sources */,
 				19697E6F248839CE006DF21A /* AksCommonFunctions + Animations.swift in Sources */,
 				19697E73248839CE006DF21A /* AksCommonFunctions + Validations.swift in Sources */,
 				19697E6C248839CE006DF21A /* AksCommonFunctions.swift in Sources */,
 				19697E5F248839CE006DF21A /* AksCommonExtensions + View.swift in Sources */,
 				19697E76248839CE006DF21A /* AksCommonFunctions + Device Info.swift in Sources */,
+				4CE988DF24A644C700C6C65E /* SwiftyStoreKit.swift in Sources */,
 				191EE764248D7EB5004261E2 /* TextualShowCaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,7 +816,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -724,6 +824,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aryansbtloe.apns-tester.sample.ios";
 				PRODUCT_NAME = "Push Notification - Client";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -742,7 +843,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Application/Push Notification Test Client.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = F474LTNP59;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -750,6 +851,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aryansbtloe.apns-tester.sample.ios";
 				PRODUCT_NAME = "Push Notification - Client";
 				PROVISIONING_PROFILE_SPECIFIER = "";

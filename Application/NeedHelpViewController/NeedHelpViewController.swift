@@ -8,9 +8,10 @@
 
 import UIKit
 import MessageUI
-
 /// <#Description#>
 class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerDelegate , MFMessageComposeViewControllerDelegate {
+    
+    @IBOutlet private weak var removeAdsButton:InAppPurchaseButton!
     
     /// <#Description#>
     override internal func viewDidLoad() {
@@ -21,6 +22,10 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
         updateUserInterfaceOnScreen()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        removeAdsButton.isHidden = Utility.adPurchaseAvailable() == false
+    }
     /// <#Description#>
     internal func startUpInitialisations(){
 
@@ -45,6 +50,12 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
     
     @IBAction func sendSMSTapped(){
         sendSMS()
+    }
+    
+    @IBAction func onClickOfInAppPurchaseButton(){
+        Utility.purchaseAdsFreeExperience { [weak self] (result) in
+            self?.removeAdsButton.isHidden = Utility.adPurchaseAvailable() == false
+        }
     }
     
     func sendEmail() {
@@ -78,5 +89,4 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
         controller.dismiss(animated: true)
     }
 
-    
 }

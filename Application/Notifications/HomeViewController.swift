@@ -25,7 +25,7 @@ class HomeViewController:BaseViewController {
                 if let deviceToken = appDelegate.deviceToken {
                     self.deviceTokenLabel.text = "Device Token\n\(deviceToken)"
                     UIPasteboard.general.string = deviceToken
-                    self.showAdd()
+                    showInterstitialAd()
                 }
             }
         }
@@ -33,13 +33,13 @@ class HomeViewController:BaseViewController {
     
     @IBAction func copyBundleIdentifier(){
         UIPasteboard.general.string = "com.aryansbtloe.apns-tester.sample.ios"
-        self.showAdd()
+        showInterstitialAd()
     }
     
     @IBAction func downloadCertificate(){
         if let url = URL(string: "https://github.com/aryansbtloe/com.aryansbtloe.apns-tester.sample.ios/raw/master/Certificate/") {
             UIApplication.shared.openURL(url)
-            self.showAdd()
+            showInterstitialAd()
         }
     }
     

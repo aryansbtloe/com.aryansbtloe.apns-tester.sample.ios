@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ybp-aJ-sWj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -280,19 +280,6 @@
             </objects>
             <point key="canvasLocation" x="-67" y="-1759"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="0KD-57-97L">
-            <objects>
-                <navigationController id="ybp-aJ-sWj" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yJk-2I-CNJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ysc-PU-3Ig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3280" y="-1008"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="s0T-Y9-mFt">
             <objects>
@@ -468,7 +455,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXv-b5-nif">
-                                <rect key="frame" x="207" y="242.5" width="0.0" height="240"/>
+                                <rect key="frame" x="207" y="99.5" width="0.0" height="526"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-GY-MWa">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="64"/>
@@ -512,21 +499,37 @@
                                             <action selector="sendSMSTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="nDy-eH-csd"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6z-b1-oHH" customClass="InAppPurchaseButton" customModule="Push_Notification___Client" customModuleProvider="target">
+                                        <rect key="frame" x="-120" y="241" width="240" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="Ka9-Of-Vrp"/>
+                                            <constraint firstAttribute="height" constant="44" id="Rru-MA-Sg0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_CONNECT_VIA_SMS_"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onClickOfInAppPurchaseButton" destination="wyf-rV-OBB" eventType="touchUpInside" id="Q9e-BX-wQU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="40p-9B-4tl" firstAttribute="top" secondItem="Uv4-Fl-zLa" secondAttribute="bottom" constant="44" id="2gM-DT-tkt"/>
+                                    <constraint firstItem="J6z-b1-oHH" firstAttribute="centerY" secondItem="BXv-b5-nif" secondAttribute="centerY" id="ApT-Xf-nvP"/>
                                     <constraint firstItem="kCk-GY-MWa" firstAttribute="top" secondItem="BXv-b5-nif" secondAttribute="top" id="HJv-UI-92c"/>
                                     <constraint firstItem="Uv4-Fl-zLa" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="Ig6-ZT-n8i"/>
                                     <constraint firstItem="Uv4-Fl-zLa" firstAttribute="top" secondItem="kCk-GY-MWa" secondAttribute="bottom" constant="5" id="Ili-J7-epU"/>
-                                    <constraint firstAttribute="height" constant="240" id="PW8-Hh-PtF"/>
+                                    <constraint firstItem="J6z-b1-oHH" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="NB4-Nd-Ko5"/>
                                     <constraint firstAttribute="trailing" secondItem="kCk-GY-MWa" secondAttribute="trailing" id="VFP-Bc-1hb"/>
                                     <constraint firstItem="kCk-GY-MWa" firstAttribute="leading" secondItem="BXv-b5-nif" secondAttribute="leading" id="djM-hP-af8"/>
+                                    <constraint firstItem="J6z-b1-oHH" firstAttribute="top" secondItem="40p-9B-4tl" secondAttribute="bottom" constant="40" id="ySr-cR-AyE"/>
                                     <constraint firstItem="40p-9B-4tl" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="zeL-oX-svD"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BXv-b5-nif" firstAttribute="centerY" secondItem="tXS-cx-VBQ" secondAttribute="centerY" id="E4H-JC-nJU"/>
                             <constraint firstItem="BXv-b5-nif" firstAttribute="centerX" secondItem="tXS-cx-VBQ" secondAttribute="centerX" id="Gck-qw-mag"/>
@@ -540,6 +543,9 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <connections>
+                        <outlet property="removeAdsButton" destination="J6z-b1-oHH" id="bRG-i4-NfV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSJ-AJ-P9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
