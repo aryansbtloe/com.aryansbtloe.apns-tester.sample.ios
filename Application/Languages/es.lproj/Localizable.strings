@@ -11,3 +11,12 @@
 "_DOWNLOAD_" = "Descargar";
 "_CAN_WE_CONNECT_" = "Oye, parece que necesito ayuda aquí \ n ¿Podemos conectarnos?";
 "_SETUP_ACCOUNT_" = "Primero configure su cuenta de correo";
+"_GET_AD_FREE_EXPERIENCE_" = "Obtenga experiencia sin anuncios de por vida";
+"_PURCHASED_AD_FREE_EXPERIENCE_" = "Tienes experiencia sin anuncios de por vida";
+"_PURCHASE_" = "Compra";
+"_NO_ADS_" = "No deseo ver anuncios";
+"_RESTORE_" = "Restaurar";
+"_REMOVE_ADS_" = "Eliminar anuncios";
+"_CANCEL_" = "Cancelar";
+"_THANKS_" = "Gracias";
+"_OKAY_" = "Está bien";
