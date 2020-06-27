@@ -24,8 +24,13 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
     
     /// <#Description#>
     internal func startUpInitialisations(){
-
+        #if targetEnvironment(macCatalyst)
+        removeAdsButton.isHidden = true
+        #else
+        removeAdsButton.isHidden = false
+        #endif
     }
+    
     /// <#Description#>
     internal func setupForNavigationBar(){
     }
