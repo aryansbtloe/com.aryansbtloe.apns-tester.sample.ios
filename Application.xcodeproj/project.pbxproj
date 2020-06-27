@@ -64,6 +64,8 @@
 		19F5C6F92485C0A6006978FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5C6F82485C0A6006978FB /* HomeViewController.swift */; };
 		379C4622E93DC4ACF0275B14 /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D15C00B75CFF81B5434EA4 /* Pods_Application.framework */; };
 		4C7B6BA324A2733A00F9350C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B6BA124A2733A00F9350C /* Localizable.strings */; };
+		4CDCECEB24A7226D0047E90E /* GLInAppPurchaseUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDCECE924A7226D0047E90E /* GLInAppPurchaseUI.xib */; };
+		4CDCECEC24A7226D0047E90E /* GLInAppPurchaseUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDCECEA24A7226D0047E90E /* GLInAppPurchaseUI.swift */; };
 		4CE988B224A5EF1300C6C65E /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988B124A5EF1300C6C65E /* AdViewController.swift */; };
 		4CE988DA24A644C700C6C65E /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988CB24A644C700C6C65E /* SKProduct+LocalizedPrice.swift */; };
 		4CE988DB24A644C700C6C65E /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE988CC24A644C700C6C65E /* InAppProductQueryRequest.swift */; };
@@ -158,6 +160,8 @@
 		4C22CE8324A2767E008E1100 /* zh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = zh; path = Languages/zh.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C7B6BA224A2733A00F9350C /* ar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ar; path = Languages/ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C7B6BA424A2734D00F9350C /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = Languages/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CDCECE924A7226D0047E90E /* GLInAppPurchaseUI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLInAppPurchaseUI.xib; sourceTree = "<group>"; };
+		4CDCECEA24A7226D0047E90E /* GLInAppPurchaseUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLInAppPurchaseUI.swift; sourceTree = "<group>"; };
 		4CE988B124A5EF1300C6C65E /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		4CE988CB24A644C700C6C65E /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
 		4CE988CC24A644C700C6C65E /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppProductQueryRequest.swift; sourceTree = "<group>"; };
@@ -381,9 +385,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4CDCECE824A7226D0047E90E /* InAppPurchaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				4CDCECE924A7226D0047E90E /* GLInAppPurchaseUI.xib */,
+				4CDCECEA24A7226D0047E90E /* GLInAppPurchaseUI.swift */,
+			);
+			path = InAppPurchaseUI;
+			sourceTree = "<group>";
+		};
 		4CE988CA24A644C700C6C65E /* InAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
+				4CDCECE824A7226D0047E90E /* InAppPurchaseUI */,
 				4CE988CB24A644C700C6C65E /* SKProduct+LocalizedPrice.swift */,
 				4CE988CC24A644C700C6C65E /* InAppProductQueryRequest.swift */,
 				4CE988CD24A644C700C6C65E /* InAppReceiptRefreshRequest.swift */,
@@ -498,6 +512,7 @@
 				1987862B2449B7A3000E7245 /* Assets.xcassets in Resources */,
 				19EFA565244C3BAA002EB33B /* GoogleService-Info.plist in Resources */,
 				191EE771248D7FC0004261E2 /* 1.rtf in Resources */,
+				4CDCECEB24A7226D0047E90E /* GLInAppPurchaseUI.xib in Resources */,
 				198786292449B79F000E7245 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +604,7 @@
 				19697E74248839CE006DF21A /* AksCommonFunctions + User Defaults.swift in Sources */,
 				4CE988DD24A644C700C6C65E /* SwiftyStoreKit+Types.swift in Sources */,
 				4CE988DE24A644C700C6C65E /* InAppReceipt.swift in Sources */,
+				4CDCECEC24A7226D0047E90E /* GLInAppPurchaseUI.swift in Sources */,
 				19697E5E248839CE006DF21A /* AksCommonExtensions + Date.swift in Sources */,
 				19697E70248839CE006DF21A /* AksCommonFunctions + Localizations.swift in Sources */,
 				19697E69248839CE006DF21A /* AksCommonFunctions + Alerts.swift in Sources */,

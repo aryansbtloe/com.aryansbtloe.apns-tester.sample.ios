@@ -22,20 +22,6 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
         updateUserInterfaceOnScreen()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if Utility.adPurchaseAvailable() , let removeAdsProduct = removeAdsProduct , Utility.adRemoveExperiencePurchased() == false {
-            let title = "\(removeAdsProduct.localizedDescription) for \(removeAdsProduct.localizedPrice ?? "")"
-            removeAdsButton.setTitle(title, for: .normal)
-            removeAdsButton.isHidden = false
-        }else if Utility.adRemoveExperiencePurchased() {
-            removeAdsButton.setTitle(LS("ENJOY_AD_FREE_EXPERIENCE"), for: .normal)
-            removeAdsButton.isEnabled = false
-            removeAdsButton.isHidden = false
-        }else{
-            removeAdsButton.isHidden = true
-        }
-    }
     /// <#Description#>
     internal func startUpInitialisations(){
 
@@ -63,15 +49,7 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
     }
     
     @IBAction func getAdFreeExperienceTapped(){
-        Utility.purchaseAdsFreeExperience { [weak self] (result) in
-            self?.removeAdsButton.isHidden = Utility.adPurchaseAvailable() == false
-        }
-    }
-    
-    @IBAction func restoreAdFreeExperiencePurchaseTapped(){
-        Utility.restorePurchasedAdsFreeExperience { [weak self] (result) in
-            self?.removeAdsButton.isHidden = Utility.adPurchaseAvailable() == false
-        }
+        Utility.noAdsClicked()
     }
     
     func sendEmail() {

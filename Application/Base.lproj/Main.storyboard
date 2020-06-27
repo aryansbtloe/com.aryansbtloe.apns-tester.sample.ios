@@ -511,24 +511,11 @@
                                         <state key="normal">
                                             <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="NO_ADS"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="getAdFreeExperienceTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="MXK-EF-TwM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHl-FI-a6a">
-                                        <rect key="frame" x="-120" y="295" width="240" height="44"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="nht-XG-NIs"/>
-                                            <constraint firstAttribute="height" constant="44" id="pgQ-Mu-cet"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
-                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Restore Purchase">
-                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="restoreAdFreeExperiencePurchaseTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="Hsi-Sp-kpd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -542,8 +529,6 @@
                                     <constraint firstItem="J6z-b1-oHH" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="NB4-Nd-Ko5"/>
                                     <constraint firstAttribute="trailing" secondItem="kCk-GY-MWa" secondAttribute="trailing" id="VFP-Bc-1hb"/>
                                     <constraint firstItem="kCk-GY-MWa" firstAttribute="leading" secondItem="BXv-b5-nif" secondAttribute="leading" id="djM-hP-af8"/>
-                                    <constraint firstItem="CHl-FI-a6a" firstAttribute="top" secondItem="J6z-b1-oHH" secondAttribute="bottom" constant="10" id="fxk-eI-qrn"/>
-                                    <constraint firstItem="CHl-FI-a6a" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="vJ2-Sn-6Zs"/>
                                     <constraint firstItem="J6z-b1-oHH" firstAttribute="top" secondItem="40p-9B-4tl" secondAttribute="bottom" constant="40" id="ySr-cR-AyE"/>
                                     <constraint firstItem="40p-9B-4tl" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="zeL-oX-svD"/>
                                 </constraints>
