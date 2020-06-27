@@ -512,7 +512,7 @@
                                             <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="NO_ADS"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_NO_ADS_"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="getAdFreeExperienceTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="MXK-EF-TwM"/>

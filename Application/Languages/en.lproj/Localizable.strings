@@ -14,9 +14,9 @@
 "_GET_AD_FREE_EXPERIENCE_" = "Get ad free experience lifetime";
 "_PURCHASED_AD_FREE_EXPERIENCE_" = "You have got lifetime ad free experience";
 "_PURCHASE_" = "Purchase";
-"_NO_ADS" = "No ads";
+"_NO_ADS_" = "I dont wish to see ads";
 "_RESTORE_" = "Restore";
 "_REMOVE_ADS_" = "Remove ads";
 "_CANCEL_" = "Cancel";
 "_THANKS_" = "Thanks";
-
+"_OKAY_" = "Okay";
