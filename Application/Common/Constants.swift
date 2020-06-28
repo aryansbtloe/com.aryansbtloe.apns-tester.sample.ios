@@ -16,3 +16,5 @@ var kadFreeExperiencePurchaseAvailable:Bool = false
 let kadFreeExperiencePurchased = "adFreeExperiencePurchased"
 let kInitialViewIdentifier = "initialView"
 var removeAdsProduct:SKProduct?
+var kUseDefaultInitialisation:Bool=true
+var kUseNavigationControllerForDefaultInitialisation:Bool=true
