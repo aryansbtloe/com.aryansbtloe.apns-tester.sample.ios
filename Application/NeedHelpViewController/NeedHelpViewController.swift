@@ -11,8 +11,6 @@ import MessageUI
 /// <#Description#>
 class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerDelegate , MFMessageComposeViewControllerDelegate {
     
-    @IBOutlet private weak var removeAdsButton:UIButton!
-
     /// <#Description#>
     override internal func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +22,6 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
     
     /// <#Description#>
     internal func startUpInitialisations(){
-        #if targetEnvironment(macCatalyst)
-        removeAdsButton.isHidden = true
-        #else
-        removeAdsButton.isHidden = false
-        #endif
     }
     
     /// <#Description#>
@@ -52,15 +45,7 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
     @IBAction func sendSMSTapped(){
         sendSMS()
     }
-    
-    @IBAction func getAdFreeExperienceTapped(){
-        Utility.noAdsClicked()
-    }
-    
-    @IBAction func shareAppTapped(){
-        Utility.shareApp()
-    }
-    
+        
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
