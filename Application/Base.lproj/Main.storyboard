@@ -518,6 +518,25 @@
                                             <action selector="getAdFreeExperienceTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="MXK-EF-TwM"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeA-1u-foI">
+                                        <rect key="frame" x="-120" y="305" width="240" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="0PH-RL-p2E"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="mo1-kx-Hub"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="_SHARE_APP_"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareAppTapped" destination="wyf-rV-OBB" eventType="touchUpInside" id="8yY-fN-cOL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -527,8 +546,10 @@
                                     <constraint firstItem="Uv4-Fl-zLa" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="Ig6-ZT-n8i"/>
                                     <constraint firstItem="Uv4-Fl-zLa" firstAttribute="top" secondItem="kCk-GY-MWa" secondAttribute="bottom" constant="5" id="Ili-J7-epU"/>
                                     <constraint firstItem="J6z-b1-oHH" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="NB4-Nd-Ko5"/>
+                                    <constraint firstItem="XeA-1u-foI" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="SLN-Pz-mEb"/>
                                     <constraint firstAttribute="trailing" secondItem="kCk-GY-MWa" secondAttribute="trailing" id="VFP-Bc-1hb"/>
                                     <constraint firstItem="kCk-GY-MWa" firstAttribute="leading" secondItem="BXv-b5-nif" secondAttribute="leading" id="djM-hP-af8"/>
+                                    <constraint firstItem="XeA-1u-foI" firstAttribute="top" secondItem="J6z-b1-oHH" secondAttribute="bottom" constant="20" id="m0P-H0-YRe"/>
                                     <constraint firstItem="J6z-b1-oHH" firstAttribute="top" secondItem="40p-9B-4tl" secondAttribute="bottom" constant="40" id="ySr-cR-AyE"/>
                                     <constraint firstItem="40p-9B-4tl" firstAttribute="centerX" secondItem="BXv-b5-nif" secondAttribute="centerX" id="zeL-oX-svD"/>
                                 </constraints>

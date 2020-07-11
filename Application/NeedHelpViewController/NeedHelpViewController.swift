@@ -57,6 +57,10 @@ class NeedHelpViewController : BaseViewController , MFMailComposeViewControllerD
         Utility.noAdsClicked()
     }
     
+    @IBAction func shareAppTapped(){
+        Utility.shareApp()
+    }
+    
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
