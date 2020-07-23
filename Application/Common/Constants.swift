@@ -16,6 +16,7 @@ let kAppShareLink = "https://apps.apple.com/us/app/id1516378834"
 var kadFreeExperiencePurchaseAvailable:Bool = false
 let kadFreeExperiencePurchased = "adFreeExperiencePurchased"
 let ksharedTheAppToRemoveAds = "sharedTheAppToRemoveAds"
+let kaddedFeedbacksToRemoveAds = "addedFeedbacksToRemoveAds"
 let kInitialViewIdentifier = "initialView"
 var removeAdsProduct:SKProduct?
 var kUseDefaultInitialisation:Bool=true
