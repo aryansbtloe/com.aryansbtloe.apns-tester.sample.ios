@@ -16,12 +16,17 @@ class TextualShowCaseViewController : BaseViewController {
     
     
     /// <#Description#>
-    override internal func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         startUpInitialisations()
         setupForNavigationBar()
         registerForNotifications()
         updateUserInterfaceOnScreen()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupForNavigationBar()
     }
     
     /// <#Description#>
@@ -40,6 +45,12 @@ class TextualShowCaseViewController : BaseViewController {
     internal func setupForNavigationBar(){
         self.navigationController?.title = viewModel["title"]
         self.navigationItem.backBarButtonItem?.tintColor = .white
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(self.back))
+
+    }
+    
+    @objc func back() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     /// <#Description#>
