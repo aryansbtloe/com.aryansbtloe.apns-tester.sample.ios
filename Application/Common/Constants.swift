@@ -9,6 +9,7 @@
 import Foundation
 import StoreKit
 
+let kMoengageAppId = "FOZRRUJ1LPLOIPQ2ULM2UBCY"
 let kAdUnitIdInterstitial = "ca-app-pub-7178447751314817/8941449898"
 let kAdUnitIdBanner = "ca-app-pub-7178447751314817/1767532843"
 let kRemoveAdsProductIdentifier = "com.aryansbtloe.apnstester.sample.ios.removeAds"

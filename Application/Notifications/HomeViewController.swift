@@ -16,18 +16,16 @@ class HomeViewController:BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchAndCopyDeviceToken()
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.init(rawValue: "PushNotificationTokenReceived"), object: nil, queue: .main) { (notification) in
+            self.fetchAndCopyDeviceToken()
+        }
     }
     
     @IBAction func fetchAndCopyDeviceToken(){
-        AppDelegate.registerForPushNotifications {[weak self] (granted, error) in
-            guard let `self` = self else {return}
-            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-                if let deviceToken = appDelegate.deviceToken {
-                    self.deviceTokenLabel.text = "Device Token\n\(deviceToken)"
-                    UIPasteboard.general.string = deviceToken
-                    showInterstitialAd()
-                }
-            }
+        if let deviceToken = UserDefaults.standard.string(forKey: "PushNotificationDeviceToken"){
+            self.deviceTokenLabel.text = "Device Token\n\(deviceToken)"
+            UIPasteboard.general.string = deviceToken
+            showInterstitialAd()
         }
     }
     

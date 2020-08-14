@@ -13,46 +13,13 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
-    public var deviceToken: String?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Utility.setupApp()
+        Utility.setupApp(launchOptions: launchOptions)
         Utility.setupCommonAppearance()
-        UNUserNotificationCenter.current().delegate = UIApplication.shared.delegate as? AppDelegate
         return true
     }
 
-    class func registerForPushNotifications(completion:@escaping (Bool, Error?) -> Void) {
-        UNUserNotificationCenter.current().delegate = UIApplication.shared.delegate as? UNUserNotificationCenterDelegate
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
-            (granted, error) in
-            guard granted else {
-                completion(granted, error)
-                return
-            }
-            DispatchQueue.main.async {
-                UIApplication.shared.registerForRemoteNotifications()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    completion(granted, error)
-                }
-            }
-        }
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let tokenParts = deviceToken.map { data -> String in
-            return String(format: "%02.2hhx", data)
-        }
-        self.deviceToken = tokenParts.joined()
-    }
-
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        print("Failed to register for remote notifications with error: \(error)")
-    }
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-         completionHandler([.alert, .sound])
-    }
 }
 
  

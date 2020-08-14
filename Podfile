@@ -8,5 +8,6 @@ target 'Application' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
+  pod 'MoEngage-iOS-SDK'
 
 end
